@@ -1,0 +1,3337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; script-src 'self' https://cdn.tailwindcss.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src https://www.youtube.com; connect-src 'self'; object-src 'none';">
+    <meta http-equiv="Permissions-Policy" content="autoplay=(self 'https://www.youtube.com'), encrypted-media=(self 'https://www.youtube.com'), fullscreen=(self 'https://www.youtube.com'), clipboard-write=(self)">
+    <title>MRD AI & BLOCKCHAIN CONSULTING - Courses</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dlroxg842/image/upload/v1756461627/favic_MRD_ouzdr9.png">
+    <!-- MRD Brain System -->
+    <script src="./mrd-brain-system.js"></script>
+    <!-- Tailwind CSS Production -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles for the entire body */
+        body {
+            font-family: 'Montserrat', 'Inter', sans-serif;
+            margin: 0;
+            padding-top: 80px;
+            background-color: #0f0f23;
+            background-image: url('https://lh3.googleusercontent.com/d/1i0Af_h2OpZcxVpfOb9S4hS95ghXlqqTy');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            color: #E5E7EB;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Standard Glass effect for all glass sections */
+        .glass-standard-style {
+            background-color: rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        /* Standard Blur for most glass sections */
+        .blur-standard {
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        /* Stronger Blur for specific sections (like cover) */
+        .blur-strong {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Standard Hover effect for all glass elements */
+        .glass-standard-style:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.1);
+            border-color: rgba(255, 215, 0, 0.6);
+        }
+
+        /* Cover glass container - uses standard blur, custom stroke/hover */
+        .cover-glass-container {
+            padding: 7rem 2rem 5rem;
+            margin: 0;
+            max-width: 100%;
+            width: 100%;
+            min-height: 80vh;
+            box-sizing: border-box;
+            z-index: 10;
+            position: relative;
+            border-radius: 0;
+            background-color: rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: min-height 0.3s ease;
+        }
+        .cover-glass-container:hover {
+            transform: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-color: rgba(255, 215, 0, 0.4);
+        }
+
+        /* General button styling for "JOIN" */
+        .access-button {
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+            color: #1F2937;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin: 3rem 0;
+        }
+
+        .access-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Gold Button Styling */
+        .gold-button {
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+            color: #1F2937;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            margin: 3rem 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .gold-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* General image styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Specific styles for the simplified article image section */
+        .cnbc-article-section {
+            background-color: transparent;
+            border-radius: 0.75rem;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 6rem;
+        }
+
+        /* Robot Hand positioning (absolute to body) */
+        .robot-hand-absolute {
+            position: absolute;
+            top: 120px;
+            right: 0;
+            width: 300px;
+            z-index: 1;
+            pointer-events: none;
+            filter: none !important;
+            -webkit-filter: none !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+        }
+
+        /* Decorative Lines Image positioning (absolute to body) */
+        .lines-image-absolute {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: none;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.75;
+            object-fit: cover;
+        }
+
+        /* AI Card styles (glass effect, icons, hover) */
+        .ai-card {
+            padding: 1.5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ai-card-icon {
+            width: 4.5rem;
+            height: 4.5rem;
+            margin-bottom: 1rem;
+            object-fit: contain;
+            filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
+        }
+        .ai-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Hedge Funds Section Specific Styles */
+        .hedge-funds-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        .section-heading-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .section-heading-container p {
+            font-size: 0.75rem;
+            color: #9CA3AF;
+            margin-bottom: 0.1rem;
+        }
+        .section-heading-container h2 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #FFD700;
+            margin-bottom: 0.2rem;
+        }
+        .section-heading-container .subtitle-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #FFF;
+            margin-bottom: 0.8rem;
+        }
+
+        .fund-section {
+            margin-bottom: 4rem;
+        }
+
+        .fund-heading {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 1.5rem;
+        }
+
+        .fund-description {
+            font-size: 1rem;
+            color: #E5E7EB;
+            line-height: 1.8;
+        }
+
+        .data-card {
+            padding: 1.5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .data-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.1);
+            border-color: rgba(255, 215, 0, 0.6);
+        }
+
+        .data-card-icon {
+            width: 2rem;
+            height: 2rem;
+            color: #FFD700;
+        }
+
+        .data-card-value {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #FFF;
+            text-align: center;
+        }
+
+        .data-card-label {
+            font-size: 0.9rem;
+            color: #D1D5DB;
+            text-align: center;
+        }
+
+        /* Infographic Section Styles */
+        .infographic-section-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .infographic-section-container .heading-small {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
+        }
+
+        .infographic-section-container .heading-large {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 4rem;
+        }
+
+        .infographic-section-container .section-title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .infographic-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .central-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1F2937;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
+        .propositions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .proposition-card {
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .proposition-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .proposition-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .proposition-card p {
+            color: #E5E7EB;
+            line-height: 1.6;
+        }
+
+        /* Mobile Accordion Styles */
+        .mobile-accordion {
+            display: none;
+        }
+
+        .accordion-item {
+            margin-bottom: 1rem;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 0;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background-color: rgba(255, 215, 0, 0.1);
+        }
+
+        .accordion-header h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #FFD700;
+            margin: 0;
+        }
+
+        .accordion-header .toggle-icon {
+            color: #FFD700;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-item.active .toggle-icon {
+            transform: rotate(45deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 200px;
+        }
+
+        .accordion-content p {
+            padding: 1rem;
+            color: #E5E7EB;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Proposition Styles for Infographic */
+        .proposition-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 300px;
+        }
+
+        .proposition {
+            background-color: rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .proposition:hover {
+            border-color: rgba(255, 215, 0, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .proposition-title-wrapper {
+            padding: 1rem;
+            background-color: rgba(255, 215, 0, 0.1);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .proposition-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #FFD700;
+            margin: 0;
+        }
+
+        .proposition-text {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .proposition.active .proposition-text {
+            max-height: 200px;
+        }
+
+        .proposition-text p {
+            padding: 1rem;
+            color: #E5E7EB;
+            line-height: 1.6;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design for Infographic */
+        @media (max-width: 768px) {
+            .propositions-grid {
+                display: none;
+            }
+
+            .mobile-accordion {
+                display: block;
+            }
+
+            .central-circle {
+                width: 150px;
+                height: 150px;
+                font-size: 1.2rem;
+            }
+            
+            /* Background image optimization for tablet */
+            .video-background {
+                background-image: url('https://res.cloudinary.com/dlroxg842/image/upload/v1756370004/tablet_back_a9doi1.jpg') !important;
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+            }
+            
+            /* Footer visibility fix for tablet */
+            .footer-section {
+                padding: 2rem 1rem !important;
+                margin-top: 2rem !important;
+            }
+            
+            /* Back to top button visibility fix */
+            .back-to-top {
+                bottom: 2rem !important;
+                right: 2rem !important;
+                z-index: 1000 !important;
+            }
+        }
+
+        /* Video Section Styles */
+        .video-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .video-section .heading-small {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-section .heading-large {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 3rem;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Blueprint Section Styles */
+        .blueprint-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .blueprint-section .heading-small {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
+        }
+
+        .blueprint-section .heading-large {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 3rem;
+        }
+
+        .blueprint-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: #E5E7EB;
+        }
+
+        .blueprint-content h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .blueprint-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .blueprint-content ul {
+            text-align: left;
+            margin: 2rem 0;
+            padding-left: 2rem;
+        }
+
+        .blueprint-content li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Pricing Section Styles */
+        .pricing-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .pricing-section .heading-small {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-section .heading-large {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 3rem;
+        }
+
+        .pricing-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: #E5E7EB;
+        }
+
+        .pricing-content h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .pricing-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .pricing-content ul {
+            text-align: left;
+            margin: 2rem 0;
+            padding-left: 2rem;
+        }
+
+        .pricing-content li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-left.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-right.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s ease;
+        }
+
+        .scale-in.animate {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .typewriter {
+            overflow: visible;
+            border-right: 2px solid #FFD700;
+            white-space: normal;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #FFD700; }
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(-100px);
+            }
+            to {
+                transform: translateX(100px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .robot-hand-absolute {
+                width: 220px;
+                top: 150px;
+                right: 0;
+                position: absolute;
+                filter: none !important;
+                -webkit-filter: none !important;
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+            }
+            .title-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 4rem;
+                padding-top: 10rem;
+            }
+            .title-text {
+                margin-top: 0;
+            }
+            .cover-glass-container {
+                padding: 4rem 1rem 2rem;
+            }
+            .cnbc-article-section {
+                margin-bottom: 4rem;
+            }
+            .hedge-funds-section {
+                padding: 2rem 1rem;
+            }
+            .section-heading-container {
+                padding-bottom: 0.5rem;
+            }
+            .section-heading-container h2 {
+                font-size: 1.3rem;
+            }
+            .section-heading-container .subtitle-text {
+                font-size: 0.8rem;
+                margin-bottom: 0.8rem;
+            }
+            .fund-heading {
+                font-size: 1rem;
+            }
+            .fund-description {
+                font-size: 0.65rem;
+            }
+            .fund-section {
+                margin-bottom: 1.5rem;
+            }
+            .data-card {
+                padding: 0.4rem;
+            }
+            .data-card-icon {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            .data-card-value {
+                font-size: 0.7rem;
+            }
+            .data-card-label {
+                font-size: 0.55rem;
+            }
+            .infographic-main-heading {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+            .infographic-container {
+                min-height: auto;
+                flex-direction: column;
+            }
+            .central-circle {
+                width: 180px;
+                height: 180px;
+                margin-bottom: 2rem;
+            }
+            .central-icon {
+                font-size: 5rem;
+            }
+            .video-section h2 {
+                font-size: 1.8rem;
+            }
+            .video-section h3 {
+                font-size: 1.2rem;
+            }
+            .blueprint-section h2 {
+                font-size: 1.5rem;
+            }
+            .blueprint-section p {
+                font-size: 0.9rem;
+            }
+            .pricing-section .heading-large {
+                font-size: 2rem;
+            }
+            .pricing-card li {
+                font-size: 0.9rem;
+            }
+            .pricing-card li svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            .pricing-card .value-prop .old-price {
+                font-size: 1rem;
+            }
+            .pricing-card .value-prop .new-price {
+                font-size: 2.2rem;
+            }
+            .pricing-card .paypal-note {
+                font-size: 0.75rem;
+            }
+            .testimonials-section .heading-large {
+                font-size: 1.8rem;
+            }
+            .testimonial-card {
+                padding: 1rem;
+            }
+            .testimonial-card .client-name {
+                font-size: 1rem;
+            }
+            .testimonial-card .stars {
+                font-size: 1rem;
+            }
+            .proof-of-work-section .heading-large {
+                font-size: 1.8rem;
+            }
+            .logo-grid {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 1rem;
+            }
+            .logo-item img {
+                width: 80px;
+                height: 50px;
+            }
+            .logo-item.binance img,
+            .logo-item.investec img {
+                width: 110px;
+                height: 70px;
+            }
+            .perfect-for-section .heading-large {
+                font-size: 1.5rem;
+            }
+            .audience-grid {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 0.8rem;
+            }
+            .audience-item svg {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            .audience-item span {
+                font-size: 0.8rem;
+            }
+            .instructor-section .heading-large {
+                font-size: 1.8rem;
+            }
+            .instructor-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .instructor-image-container {
+                width: 120px;
+                height: 160px;
+            }
+            .instructor-name {
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+            .instructor-bio {
+                font-size: 0.8rem;
+            }
+            .instructor-bio .quote {
+                font-size: 0.9rem;
+            }
+            .instructor-bio .author {
+                font-size: 0.8rem;
+            }
+            .instructor-cta {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 1280px) and (min-width: 1025px) {
+            .title-section {
+                padding-top: 7rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .robot-hand-absolute {
+                width: 300px;
+                right: 0;
+                top: 150px;
+                filter: none !important;
+                -webkit-filter: none !important;
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+            }
+            .title-section {
+                padding-top: 5rem;
+            }
+            .hedge-funds-section {
+                padding: 3rem 1.5rem;
+            }
+            .section-heading-container h2 {
+                font-size: 1.8rem;
+            }
+            .section-heading-container .subtitle-text {
+                font-size: 1rem;
+                margin-bottom: 0.8rem;
+            }
+            .fund-heading {
+                font-size: 1.2rem;
+            }
+            .fund-description {
+                font-size: 0.8rem;
+            }
+            .data-card-icon {
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+            .data-card-value {
+                font-size: 0.75rem;
+            }
+            .data-card-label {
+                font-size: 0.6rem;
+            }
+            .infographic-main-heading {
+                font-size: 2rem;
+                margin-bottom: 3rem;
+            }
+            .infographic-container {
+                min-height: 60vh;
+            }
+            .video-section h2 {
+                font-size: 2rem;
+            }
+            .video-section h3 {
+                font-size: 1.5rem;
+            }
+            .blueprint-section h2 {
+                font-size: 1.8rem;
+            }
+            .blueprint-section p {
+                font-size: 1rem;
+            }
+            .pricing-section .heading-large {
+                font-size: 2rem;
+            }
+            .pricing-card {
+                padding: 1.5rem;
+            }
+            .pricing-card .value-prop .new-price {
+                font-size: 2.5rem;
+            }
+            .testimonials-section .heading-large {
+                font-size: 2rem;
+            }
+            .proof-of-work-section .heading-large {
+                font-size: 2rem;
+            }
+            .logo-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 1.5rem;
+            }
+            .logo-item img {
+                width: 100px;
+                height: 60px;
+            }
+            .logo-item.binance img,
+            .logo-item.investec img {
+                width: 130px;
+                height: 80px;
+            }
+            .perfect-for-section .heading-large {
+                font-size: 2rem;
+            }
+            .audience-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 1rem;
+            }
+            .audience-item svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            .audience-item span {
+                font-size: 0.9rem;
+            }
+            .instructor-section .heading-large {
+                font-size: 2rem;
+            }
+            .instructor-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .instructor-image-container {
+                width: 150px;
+                height: 200px;
+            }
+            .instructor-bio {
+                font-size: 0.8rem;
+            }
+            .instructor-bio .quote {
+                font-size: 0.9rem;
+            }
+            .instructor-bio .author {
+                font-size: 0.8rem;
+            }
+            .instructor-cta {
+                font-size: 1.2rem;
+            }
+            
+            .heading-large {
+                font-size: 2.5rem !important;
+                margin-bottom: 2rem !important;
+            }
+            
+            .subtitle-text {
+                font-size: 2rem !important;
+                margin-bottom: 2rem !important;
+            }
+        }
+
+        /* Testimonials Section Styles */
+        .testimonials-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .testimonials-section .heading-small {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonials-section .heading-large {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 3rem;
+        }
+
+        .testimonial-card {
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+            border-color: rgba(255, 215, 0, 0.5);
+        }
+
+        .testimonial-card .video-thumbnail-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-card .video-thumbnail-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonial-card .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3rem;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .testimonial-card:hover .play-icon {
+            opacity: 1;
+        }
+
+        .testimonial-card .client-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-card .stars {
+            color: #FFD700;
+            font-size: 1.2rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Ensure testimonials look good on all screen sizes */
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .heading-large {
+                font-size: 2rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+            
+            .subtitle-text {
+                font-size: 1.5rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+            
+            .section-title {
+                font-size: 1.8rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+            
+            .section-subtitle {
+                font-size: 1.5rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+            
+            /* Background image optimization for phone */
+            .video-background {
+                background-image: url('https://res.cloudinary.com/dlroxg842/image/upload/v1756370004/phone_back_op9qnw.jpg') !important;
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+            }
+            
+            /* Consistent font sizing for all subtext on phone */
+            .hero-subtitle, .section-subtitle, .mission-text, .about-text {
+                font-size: 0.9rem !important;
+                line-height: 1.5 !important;
+            }
+            
+            /* Footer visibility fix for phone */
+            .footer-section {
+                padding: 1.5rem 0.5rem !important;
+                margin-top: 1.5rem !important;
+                position: relative !important;
+                z-index: 100 !important;
+            }
+            
+            /* Back to top button visibility fix for phone */
+            .back-to-top {
+                bottom: 1rem !important;
+                right: 1rem !important;
+                z-index: 1000 !important;
+                width: 45px !important;
+                height: 45px !important;
+                font-size: 1.2rem !important;
+            }
+        }
+
+        .testimonial-card:hover .play-icon {
+            opacity: 1;
+        }
+
+        .testimonial-card .client-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-card .stars {
+            color: #FFD700;
+            font-size: 1.2rem;
+        }
+
+        /* Testimonial Modal Styles */
+        .testimonial-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .testimonial-modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            background: #000;
+            border: 2px solid #FFD700;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #FFD700;
+            color: #000;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
+            z-index: 10001;
+        }
+
+        .close-modal:hover {
+            background: #FFA500;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Proof of Work Section Styles */
+        .proof-of-work-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .proof-of-work-section .heading-small {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
+        }
+
+        .proof-of-work-section .heading-large {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 3rem;
+        }
+
+        .logo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .company-logos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .company-logo {
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .company-logo:hover {
+            transform: translateY(-5px);
+        }
+
+        .company-logo img {
+            max-width: 100%;
+            height: auto;
+            filter: grayscale(100%) brightness(0.8);
+            transition: all 0.3s ease;
+        }
+
+        .company-logo:hover img {
+            filter: grayscale(0%) brightness(1);
+        }
+
+        /* Logo Item Styles */
+        .logo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            text-align: center;
+            flex: 0 0 auto;
+        }
+
+        .logo-item img {
+            width: 120px;
+            height: 80px;
+            object-fit: contain;
+            background-color: white;
+            border-radius: 0;
+            padding: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .logo-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-item.binance img,
+        .logo-item.investec img {
+            width: 150px;
+            height: 100px;
+        }
+
+        .logo-item span {
+            font-size: 0.8rem;
+            color: #FFD700;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Ramaphosa Quote Section Styles */
+        .ramaphosa-quote-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .ramaphosa-quote-section .heading-small {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
+        }
+
+        .ramaphosa-quote-section .heading-large {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 3rem;
+        }
+
+        .quote-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem;
+            position: relative;
+        }
+
+        .quote-container::before {
+            content: '"';
+            font-size: 4rem;
+            color: #FFD700;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: serif;
+        }
+
+        .quote-container::after {
+            content: '"';
+            font-size: 4rem;
+            color: #FFD700;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-family: serif;
+        }
+
+        .quote-text {
+            font-size: 1.3rem;
+            color: #E5E7EB;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .quote-author {
+            font-size: 1.1rem;
+            color: #FFD700;
+            font-weight: 600;
+        }
+
+        /* Perfect For Section Styles */
+        .perfect-for-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .perfect-for-section .heading-small {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
+        }
+
+        .perfect-for-section .heading-large {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 3rem;
+        }
+
+        .perfect-for-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .perfect-for-card {
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .perfect-for-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .perfect-for-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .perfect-for-card p {
+            color: #E5E7EB;
+            line-height: 1.6;
+        }
+
+        /* Audience Item Styles */
+        .audience-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .audience-item svg {
+            color: #FFD700;
+            width: 1.5rem;
+            height: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .audience-item span {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #E5E7EB;
+        }
+
+        /* Instructor Section Styles */
+        .instructor-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .instructor-section .heading-small {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
+        }
+
+        .instructor-section .heading-large {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 3rem;
+        }
+
+        .instructor-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .instructor-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .instructor-text {
+            text-align: left;
+            line-height: 1.8;
+            color: #E5E7EB;
+        }
+
+        .instructor-text h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 1.5rem;
+        }
+
+        .instructor-text p {
+            margin-bottom: 1rem;
+        }
+
+        /* Footer Styles */
+        .footer-section {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: transparent;
+            color: #9CA3AF;
+            font-size: 0.85rem;
+            margin-top: 4rem;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+            color: #1F2937;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+
+
+        .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .cookie-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .accept-btn {
+            background-color: #FFD700;
+            color: #1F2937;
+        }
+
+        .decline-btn {
+            background-color: #6B7280;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .robot-hand-absolute {
+                width: 220px;
+                top: 150px;
+                right: 0;
+                position: absolute;
+            }
+            .title-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 4rem;
+                padding-top: 10rem;
+            }
+            .title-text {
+                margin-top: 0;
+            }
+            .cover-glass-container {
+                padding: 4rem 1rem 2rem;
+            }
+            .cnbc-article-section {
+                margin-bottom: 4rem;
+            }
+            .hedge-funds-section {
+                padding: 2rem 1rem;
+            }
+            .section-heading-container {
+                padding-bottom: 0.5rem;
+            }
+            .section-heading-container h2 {
+                font-size: 1.3rem;
+            }
+            .section-heading-container .subtitle-text {
+                font-size: 0.8rem;
+                margin-bottom: 0.8rem;
+            }
+            .fund-heading {
+                font-size: 1rem;
+            }
+            .fund-description {
+                font-size: 0.65rem;
+            }
+            .fund-section {
+                margin-bottom: 1.5rem;
+            }
+            .data-card {
+                padding: 0.4rem;
+            }
+            .data-card-icon {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            .data-card-value {
+                font-size: 0.7rem;
+            }
+            .data-card-label {
+                font-size: 0.55rem;
+            }
+            .infographic-main-heading {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+            .infographic-container {
+                min-height: auto;
+                flex-direction: column;
+            }
+            .central-circle {
+                width: 180px;
+                height: 180px;
+                margin-bottom: 2rem;
+            }
+            .central-icon {
+                font-size: 5rem;
+            }
+            .video-section h2 {
+                font-size: 1.8rem;
+            }
+            .video-section h3 {
+                font-size: 1.2rem;
+            }
+            .blueprint-section h2 {
+                font-size: 1.5rem;
+            }
+            .blueprint-section p {
+                font-size: 0.9rem;
+            }
+            .pricing-section .heading-large {
+                font-size: 2rem;
+            }
+            .pricing-card li {
+                font-size: 0.9rem;
+            }
+            .pricing-card li svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            .pricing-card .value-prop .old-price {
+                font-size: 1rem;
+            }
+            .pricing-card .value-prop .new-price {
+                font-size: 2.2rem;
+            }
+            .pricing-card .paypal-note {
+                font-size: 0.75rem;
+            }
+            .testimonials-section .heading-large {
+                font-size: 1.8rem;
+            }
+            .testimonial-card {
+                padding: 1rem;
+            }
+            .testimonial-card .client-name {
+                font-size: 1rem;
+            }
+            .testimonial-card .stars {
+                font-size: 1rem;
+            }
+            .proof-of-work-section .heading-large {
+                font-size: 1.8rem;
+            }
+            .logo-grid {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 1rem;
+            }
+            .logo-item img {
+                width: 80px;
+                height: 50px;
+            }
+            .logo-item.binance img,
+            .logo-item.investec img {
+                width: 110px;
+                height: 70px;
+            }
+            .perfect-for-section .heading-large {
+                font-size: 1.5rem;
+            }
+            .audience-grid {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 0.8rem;
+            }
+            .audience-item svg {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            .audience-item span {
+                font-size: 0.8rem;
+            }
+            .instructor-section .heading-large {
+                font-size: 1.8rem;
+            }
+            .instructor-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .instructor-image-container {
+                width: 120px;
+                height: 160px;
+            }
+            .instructor-name {
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+            .instructor-bio {
+                font-size: 0.8rem;
+            }
+            .instructor-bio .quote {
+                font-size: 0.9rem;
+            }
+            .instructor-bio .author {
+                font-size: 0.8rem;
+            }
+            .instructor-cta {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 1280px) and (min-width: 1025px) {
+            .title-section {
+                padding-top: 7rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .robot-hand-absolute {
+                width: 300px;
+                right: 0;
+                top: 150px;
+            }
+            .title-section {
+                padding-top: 5rem;
+            }
+            .hedge-funds-section {
+                padding: 3rem 1.5rem;
+            }
+            .section-heading-container h2 {
+                font-size: 1.8rem;
+            }
+            .section-heading-container .subtitle-text {
+                font-size: 1rem;
+                margin-bottom: 0.8rem;
+            }
+            .fund-heading {
+                font-size: 1.2rem;
+            }
+            .fund-description {
+                font-size: 0.8rem;
+            }
+            .data-card-icon {
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+            .data-card-value {
+                font-size: 0.75rem;
+            }
+            .data-card-label {
+                font-size: 0.6rem;
+            }
+            .infographic-main-heading {
+                font-size: 2rem;
+                margin-bottom: 3rem;
+            }
+            .infographic-container {
+                min-height: 60vh;
+            }
+            .video-section h2 {
+                font-size: 2rem;
+            }
+            .video-section h3 {
+                font-size: 1.5rem;
+            }
+            .blueprint-section h2 {
+                font-size: 1.8rem;
+            }
+            .blueprint-section p {
+                font-size: 1rem;
+            }
+            .pricing-section .heading-large {
+                font-size: 2rem;
+            }
+            .pricing-card {
+                padding: 1.5rem;
+            }
+            .pricing-card .value-prop .new-price {
+                font-size: 2.5rem;
+            }
+            .testimonials-section .heading-large {
+                font-size: 2rem;
+            }
+            .proof-of-work-section .heading-large {
+                font-size: 2rem;
+            }
+            .logo-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 1.5rem;
+            }
+            .logo-item img {
+                width: 100px;
+                height: 60px;
+            }
+            .logo-item.binance img,
+            .logo-item.investec img {
+                width: 130px;
+                height: 80px;
+            }
+            .perfect-for-section .heading-large {
+                font-size: 2rem;
+            }
+            .audience-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 1rem;
+            }
+            .audience-item svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            .audience-item span {
+                font-size: 0.9rem;
+            }
+            .instructor-section .heading-large {
+                font-size: 2rem;
+            }
+            .instructor-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .instructor-image-container {
+                width: 150px;
+                height: 200px;
+            }
+            .instructor-bio {
+                font-size: 0.8rem;
+            }
+            .instructor-bio .quote {
+                font-size: 0.9rem;
+            }
+            .instructor-bio .author {
+                font-size: 0.8rem;
+            }
+            .instructor-cta {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Signup Modal Styles */
+        #signup-modal {
+            display: none;
+        }
+
+        #signup-modal.show {
+            display: flex;
+        }
+
+        #close-signup-modal {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 2rem;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        #close-signup-modal:hover {
+            color: #FFD700;
+        }
+
+        /* Testimonial Modal Styles */
+        .testimonial-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .testimonial-modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            background: #000;
+            border: 2px solid #FFD700;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #FFD700;
+            color: #000;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
+            z-index: 10001;
+        }
+
+        .close-modal:hover {
+            background: #FFA500;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .section-title span {
+            color: #FFD700;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #FFD700;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Section Styles */
+        
+        /* Navigation Styles */
+        .main-navigation {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link:hover {
+            color: #FFD700;
+            transform: translateY(-2px);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #FFD700;
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .join-btn {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #000 !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .join-btn:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .join-btn::after {
+            display: none;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background: #FFD700;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 768px) {
+            .main-navigation {
+                top: 15px;
+                right: 15px;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 60px;
+                right: -100%;
+                width: 200px;
+                background: rgba(0, 0, 0, 0.95);
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 1rem;
+                transition: right 0.3s ease;
+                gap: 1rem;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            }
+            
+            .nav-menu.active {
+                right: 15px;
+            }
+            
+            .nav-toggle {
+                display: flex;
+            }
+            
+            .nav-toggle.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .nav-toggle.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            
+            .nav-toggle.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            
+            .nav-link {
+                font-size: 1rem;
+                padding: 0.5rem 0;
+            }
+            
+            .join-btn {
+                margin-top: 0.5rem;
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        /* Logo Header Styles - Matching Homepage */
+        .logo-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .site-logo {
+            height: 60px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .site-logo:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .logo-header {
+                padding: 0.75rem 1rem;
+            }
+            
+            .site-logo {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav class="main-navigation">
+        <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="learning.html" class="nav-link">Learn</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="join.html" class="nav-link join-btn">JOIN</a>
+        </div>
+        
+        <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+    <!-- Logo Header - Logo on the LEFT side only -->
+    <header class="logo-header">
+        <div class="logo-container">
+            <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756040166/LOGO_MRD_okxdhc.png" alt="MRD Logo" class="site-logo">
+        </div>
+    </header>
+    
+    <!-- Robot Hand positioned from the edge of the page and on top layer -->
+    <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756141098/robot_hand_jlwert.png"
+         alt="Robot Hand"
+         class="robot-hand-absolute"
+         loading="eager"
+    >
+
+    <!-- Decorative Lines Image positioned on the top left -->
+    <img src="https://lh3.googleusercontent.com/d/1kgvpgCyOcChfg2lsVs-GKf6JQyoMTeO-"
+         alt="Decorative Lines"
+         class="lines-image-absolute"
+         loading="eager"
+    >
+
+    <div class="cover-glass-container glass-standard-style blur-standard">
+        <!-- Main Title Section (Cover) -->
+        <div class="flex flex-col md:flex-row items-center justify-center mb-16 title-section relative z-30">
+            <div class="text-white text-center title-text flex-1 fade-in">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 text-white">
+                    Profitable Quantitative <br class="hidden sm:inline"> Trading System with AI
+                </h1>
+            </div>
+
+        </div>
+
+        <!-- Article Image Section - Simplified (Cover) -->
+        <div class="cnbc-article-section mb-16 shadow-xl scale-in">
+            <!-- Article image only -->
+            <img src="https://lh3.googleusercontent.com/d/15V0GeMXnhOAuKalTw3Qx9s2NqKlVm5SG"
+                 alt="Bitcoin rally article"
+                 class="rounded-lg shadow-md max-w-full h-auto w-full md:w-3/4 lg:w-2/3"
+                 loading="eager"
+            >
+        </div>
+
+        <!-- AI Automation Cards Section - Redesigned (Cover) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <!-- AI AUTOMATIONS Card -->
+            <div class="ai-card glass-standard-style blur-standard fade-in">
+                <!-- Image Icon for Automation -->
+                <img src="https://lh3.googleusercontent.com/d/1HB5SLQdSaZx7rV2n8rHJLC6UL8bgBruV"
+                     alt="AI Automations Icon"
+                     class="ai-card-icon"
+                     loading="eager"
+                >
+                <h3 class="text-amber-300 text-xl font-semibold mb-3">AI AUTOMATIONS</h3>
+                <p class="text-gray-300 text-base leading-relaxed">
+                    AI-Powered Trading: Backtested 35-48% Avg gains with 4x Profit Factor
+                </p>
+            </div>
+
+            <!-- AI ASSISTANTS Card -->
+            <div class="ai-card glass-standard-style blur-standard slide-in-left">
+                <!-- Image Icon for Assistants -->
+                <img src="https://lh3.googleusercontent.com/d/1L44uaztKzGd-9pK2zMkPKxDplXlaiTqd"
+                     alt="AI Assistants Icon"
+                     class="ai-card-icon"
+                     loading="eager"
+                >
+                <h3 class="text-amber-300 text-xl font-semibold mb-3">AI ASSISTANTS</h3>
+                <p class="text-gray-300 text-base leading-relaxed">
+                    Stanford "AI Analyst" outperformed 93% of mutual fund managers, delivering an average 600% greater returns
+                </p>
+            </div>
+
+            <!-- AI AGENTS Card -->
+            <div class="ai-card glass-standard-style blur-standard slide-in-right">
+                <!-- Image Icon for Agents -->
+                <img src="https://lh3.googleusercontent.com/d/1OWblkFw8swSDDgjVxUubiQm_9Oab0nqG"
+                     alt="AI Agents Icon"
+                     class="ai-card-icon"
+                     loading="eager"
+                >
+                <h3 class="text-amber-300 text-xl font-semibold mb-3">AI AGENTS</h3>
+                <p class="text-gray-300 text-base leading-relaxed">
+                    Quant funds explode (+1150%) in 5 years quant AI trades now hold nearly $11 trillion in assets
+                </p>
+            </div>
+        </div>
+
+        <!-- JOIN Button (Cover) -->
+        <div class="text-center mt-8 mb-24 fade-in">
+            <a href="join.html" class="access-button inline-block">JOIN</a>
+        </div>
+    </div>
+
+    <!-- Leading Hedge Funds Section - NO GLASS EFFECT, uses body background -->
+    <div class="hedge-funds-section">
+        <div class="section-heading-container fade-in">
+            <p class="heading-small">HERE ARE THE</p>
+            <h2 class="heading-large" style="font-size: 3.5rem; margin-bottom: 4rem;">LEADING HEDGE FUNDS USING</h2>
+            <h2 class="subtitle-text" style="font-size: 3rem; margin-bottom: 4rem;">QUANTITATIVE TRADING SYSTEMS...</h2>
+        </div>
+
+        <!-- J.P. Morgan Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 fund-section">
+            <div class="flex flex-col justify-center slide-in-left">
+                <h3 class="fund-heading">J.P. Morgan</h3>
+                <p class="fund-description">
+                    - $100B quant derivatives book - J.P. Morgan's quant engine at work.<br>
+                    - 60%+ trade win rate with AI - execution intelligence in action.<br>
+                    - <5ms trade latency - built for speed and precision.<br>
+                    - 60-75%+ global market volume flows through algorithms.<br>
+                    - 92% of FX trades are algorithmic - AI doesn't sleep.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 slide-in-right">
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Net Trading Revenue -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign">
+                        <line x1="12" y1="1" x2="12" y2="23"/>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                    <span class="data-card-value">$20.5 Billion</span>
+                    <span class="data-card-label">Net Trading Revenue</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Quant Derivatives Book -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-text">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                        <path d="M8 8h8"/>
+                        <path d="M8 12h8"/>
+                    </svg>
+                    <span class="data-card-value">$100 Billion</span>
+                    <span class="data-card-label">Quant Derivatives Book</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for AI Trade Win Rate -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up">
+                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                        <polyline points="16 7 22 7 22 13"/>
+                    </svg>
+                    <span class="data-card-value">60%+ Success</span>
+                    <span class="data-card-label">AI Trade Win Rate</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Trade Latency -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                    </svg>
+                    <span class="data-card-value">< 5 ms</span>
+                    <span class="data-card-label">Trade Latency</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for US Equity Market -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bar-chart-2">
+                        <line x1="18" y1="20" x2="18" y2="10"/>
+                        <line x1="12" y1="20" x2="12" y2="4"/>
+                        <line x1="6" y1="20" x2="6" y2="14"/>
+                    </svg>
+                    <span class="data-card-value">~10% of Volume</span>
+                    <span class="data-card-label">US Equity Market</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Global Algo Volume -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                    <span class="data-card-value">60-75%</span>
+                    <span class="data-card-label">Global Algo Volume</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Algorithmic FX Trades -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-left">
+                        <path d="M8 3L12 7 8 11"/>
+                        <path d="M12 7H3"/>
+                        <path d="M16 21L12 17 16 13"/>
+                        <path d="M12 17H21"/>
+                    </svg>
+                    <span class="data-card-value">92% of Trades</span>
+                    <span class="data-card-label">Algorithmic FX Trades</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Business Model -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building">
+                        <rect x="3" y="14" width="18" height="8" rx="1"/>
+                        <path d="M12 2v12"/>
+                        <path d="M17 7H7"/>
+                        <path d="M17 10H7"/>
+                    </svg>
+                    <span class="data-card-value">Proprietary Capital</span>
+                    <span class="data-card-label">Driven Structure</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jane Street Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 fund-section">
+            <div class="flex flex-col justify-center slide-in-left">
+                <h3 class="fund-heading">Jane Street</h3>
+                <p class="fund-description">
+                    - $20.5 B Net Trading Revenue (2024)<br>
+                    - Handles ~10% of US Equity Market Volume<br>
+                    - Trades on 200+ Venues in 45 Countries<br>
+                    - ~14% of U.S. ETF trades. 20% of EU ETFs<br>
+                    - $2.3B Gross Profit from Indian Options & Futures (2024)<br>
+                    - Proprietary Capital-Driven Structure
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 slide-in-right">
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Net Trading Revenue -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign">
+                        <line x1="12" y1="1" x2="12" y2="23"/>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                    <span class="data-card-value">$20.5 Billion</span>
+                    <span class="data-card-label">Net Trading Revenue</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for US Equity Market -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bar-chart-2">
+                        <line x1="18" y1="20" x2="18" y2="10"/>
+                        <line x1="12" y1="20" x2="12" y2="4"/>
+                        <line x1="6" y1="20" x2="6" y2="14"/>
+                    </svg>
+                    <span class="data-card-value">~10% of Volume</span>
+                    <span class="data-card-label">US Equity Market</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Global Trading Venues -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map">
+                        <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+                        <line x1="9" y1="3" x2="9" y2="18"/>
+                        <line x1="15" y1="6" x2="15" y2="21"/>
+                    </svg>
+                    <span class="data-card-value">200+ Venues</span>
+                    <span class="data-card-label">45 Countries</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for ETF Trading Share -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pie-chart">
+                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                        <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+                    </svg>
+                    <span class="data-card-value">~14% U.S. ETFs</span>
+                    <span class="data-card-label">20% of EU ETFs</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Indian Options & Futures -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-indian-rupee">
+                        <path d="M6 3h12"/>
+                        <path d="M6 8h12"/>
+                        <path d="M6 13h12"/>
+                        <path d="M6 18h12"/>
+                        <path d="M6 23h12"/>
+                        <path d="M12 1v22"/>
+                    </svg>
+                    <span class="data-card-value">$2.3 Billion</span>
+                    <span class="data-card-label">Indian Options & Futures</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Business Model -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building">
+                        <rect x="3" y="14" width="18" height="8" rx="1"/>
+                        <path d="M12 2v12"/>
+                        <path d="M17 7H7"/>
+                        <path d="M17 10H7"/>
+                    </svg>
+                    <span class="data-card-value">Proprietary Capital</span>
+                    <span class="data-card-label">Driven Structure</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 fund-section">
+            <div class="flex flex-col justify-center slide-in-left">
+                <h3 class="fund-heading">Renaissance Technologies</h3>
+                <p class="fund-description">
+                    - ~66% gross and ~39% net of fees annually from 1988 to 2018.<br>
+                    - A total discretionary AUM of over $90 billion<br>
+                    - <5ms trade latency - built for speed and precision.<br>
+                    - 60%+ trade win rate with AI - execution intelligence in action.<br>
+                    - 92% of FX trades are algorithmic.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 slide-in-right">
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-percent">
+                        <line x1="19" y1="5" x2="5" y2="19"/>
+                        <circle cx="6.5" cy="6.5" r="2.5"/>
+                        <circle cx="17.5" cy="17.5" r="2.5"/>
+                    </svg>
+                    <span class="data-card-value">~39% Net Annually</span>
+                    <span class="data-card-label">(1988-2018)</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet">
+                        <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h12a2 2 0 0 1 0 4H5a2 2 0 0 0 0 4h12a2 2 0 0 0 2-2v-3"/>
+                        <path d="M2 10h18"/>
+                    </svg>
+                    <span class="data-card-value">$90+ Billion</span>
+                    <span class="data-card-label">AUM</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box">
+                        <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
+                        <path d="m3.3 7 8.7 5 8.7-5"/>
+                        <path d="M12 22V12"/>
+                    </svg>
+                    <span class="data-card-value">"Black Box" Strategy</span>
+                    <span class="data-card-label">Hires Scientists, Not Analysts</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                    <span class="data-card-value">High Turnover, Short-Term</span>
+                    <span class="data-card-label">Trading Style</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                    </svg>
+                    <span class="data-card-value">< 5 ms</span>
+                    <span class="data-card-label">Trade Latency</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-repeat">
+                        <path d="M17 2H9A5 5 0 0 0 4 7v10a5 5 0 0 0 5 5h8a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5z"/>
+                        <path d="M12 8v8"/>
+                        <path d="M8 12h8"/>
+                    </svg>
+                    <span class="data-card-value">100,000s of trades/day</span>
+                    <span class="data-card-label">Trade Frequency</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up">
+                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                        <polyline points="16 7 22 7 22 13"/>
+                    </svg>
+                    <span class="data-card-value">60%+ Success</span>
+                    <span class="data-card-label">AI Trade Win Rate</span>
+                </div>
+                <div class="data-card glass-standard-style blur-standard fade-in">
+                    <!-- Icon for Algorithmic FX Trades -->
+                    <svg class="data-card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-left">
+                        <path d="M8 3L12 7 8 11"/>
+                        <path d="M12 7H3"/>
+                        <path d="M16 21L12 17 16 13"/>
+                        <path d="M12 17H21"/>
+                    </svg>
+                    <span class="data-card-value">92% of Trades</span>
+                    <span class="data-card-label">Algorithmic FX Trades</span>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center text-gray-400 text-sm mt-8">AND MANY MORE...</p>
+    </div>
+
+    <div class="infographic-section-container">
+        <h2 class="section-title typewriter fade-in">BUT THE REAL QUESTION IS <span>HOW DO THEY DO IT?</span></h2>
+
+        <div class="infographic-container" style="margin-top: 3rem;">
+            <div id="infographic-lines-container" class="hidden md:block"></div>
+
+            <div class="w-full flex flex-col md:flex-row items-center justify-center md:gap-16 lg:gap-24">
+            
+                <div class="proposition-column order-2 md:order-1 slide-in-left">
+                    <div id="prop1" class="proposition fade-in">
+                        <div class="proposition-title-wrapper"><p class="proposition-title">Deeper Data-Driven Insights</p></div>
+                        <div class="proposition-text"><p>Delves into vast datasets to discover complex patterns and correlations missed by simpler bots.</p></div>
+                    </div>
+                    <div id="prop2" class="proposition fade-in">
+                        <div class="proposition-title-wrapper"><p class="proposition-title">Sophisticated Modeling</p></div>
+                        <div class="proposition-text"><p>Uses complex mathematical models to forecast market behavior, volatility, and sentiment.</p></div>
+                    </div>
+                    <div id="prop3" class="proposition fade-in">
+                        <div class="proposition-title-wrapper"><p class="proposition-title">Rigorous Backtesting</p></div>
+                        <div class="proposition-text"><p>Extensively validates and optimizes strategies against historical data before deployment.</p></div>
+                    </div>
+                    <div id="prop4" class="proposition fade-in">
+                        <div class="proposition-title-wrapper"><p class="proposition-title">Systematic Risk Management</p></div>
+                        <div class="proposition-text"><p>Integrates risk management at its core for more controlled and predictable risk exposure.</p></div>
+                    </div>
+                </div>
+
+                <div id="central-circle" class="central-circle order-1 md:order-2 my-8 md:my-0 scale-in">
+                    <svg class="central-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <path d="M12 20V10M18 20V4M6 20v-4" />
+                    </svg>
+                </div>
+                
+                <div class="proposition-column order-3 slide-in-right">
+                    <div id="prop5" class="proposition fade-in">
+                        <div class="proposition-title-wrapper"><p class="proposition-title">Robust & Adaptive Strategies</p></div>
+                        <div class="proposition-text"><p>Strategies adapt to changing market conditions, not based on fixed, fragile rules.</p></div>
+                    </div>
+                    <div id="prop6" class="proposition fade-in">
+                        <div class="proposition-title-wrapper"><p class="proposition-title">Reduced Emotional Bias</p></div>
+                        <div class="proposition-text"><p>Decisions are based on statistical evidence, removing emotion from strategy and execution.</p></div>
+                    </div>
+                    <div id="prop7" class="proposition fade-in">
+                        <div class="proposition-title-wrapper"><p class="proposition-title">Access to Complex Opportunities</p></div>
+                        <div class="proposition-text"><p>Identifies and capitalizes on subtle and short-lived market inefficiencies.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <h2 class="section-title typewriter fade-in" style="font-size: 3.5rem; margin-bottom: 2rem;">THE FUTURE OF <span>TRADING</span></h2>
+        <h3 class="section-subtitle fade-in" style="font-size: 2.5rem; margin-bottom: 3rem;">QUANTITATIVE TRADING</h3>
+        <div class="video-container scale-in">
+                            <iframe 
+                    src="https://www.youtube.com/embed/9c7Grp2fwt0?autoplay=0&controls=1&rel=0&modestbranding=1" 
+                    title="Course Preview Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+        </div>
+        <div class="mt-8 fade-in">
+            <a href="join.html" class="access-button inline-block">JOIN</a>
+        </div>
+    </div>
+
+    <div class="blueprint-section">
+        <h2 class="text-white fade-in">BUT WAIT</h2>
+        <h2 class="text-white font-bold text-4xl mb-4 fade-in">IT WAS ALL A SECRET</h2>
+        <h2 class="text-white font-bold text-4xl mb-8 fade-in">UNTIL NOW</h2>
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+            <div class="flex-shrink-0 slide-in-left">
+                <img src="https://i.imgur.com/b7d58UN.jpg" alt="AI Profit Blueprint Laptop" class="max-w-xs lg:max-w-sm rounded-lg shadow-lg" loading="lazy" crossorigin="anonymous">
+            </div>
+            <div class="text-left lg:w-1/2 slide-in-right">
+                <h3 class="text-amber-300 text-2xl font-bold mb-4">THE AI PROFIT BLUEPRINT</h3>
+                <p class="text-gray-300 text-base leading-relaxed">
+                    Stop guessing and start trading with precision. The AI Profit Blueprint is the
+                    definitive guide to leveraging the power of artificial intelligence for navigating the
+                    blockchain markets. This system teaches you how to build and deploy intelligent
+                    bots that analyze market data, identify high-probability opportunities, and
+                    execute trades 24/7, removing emotion and human error from the equation.
+                    Unlock the future of trading and gain an analytical edge that few possess.
+                </p>
+            </div>
+        </div>
+        <a href="join.html" class="access-button inline-block fade-in">JOIN</a>
+    </div>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section glass-standard-style blur-standard">
+            <p class="heading-small fade-in">TESTIMONIALS</p>
+            <h2 class="heading-large fade-in">What Our <span class="text-amber-300">Students Say</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="ZvnGTbe1uzM">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/ZvnGTbe1uzM/hqdefault.jpg" alt="Lunga Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3 class="client-name">LUNGA</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="yxQ1GZUVB98">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/yxQ1GZUVB98/hqdefault.jpg" alt="Nolwazi Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3 class="client-name">NOLWAZI</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="aDitE4IijCg">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/aDitE4IijCg/hqdefault.jpg" alt="Zaahid Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3 class="client-name">ZAAHID</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="W8TC2ZO01xQ">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/W8TC2ZO01xQ/hqdefault.jpg" alt="Moses Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3 class="client-name">MOSES</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="921ygoNG5BY">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/921ygoNG5BY/hqdefault.jpg" alt="Fundi Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3 class="client-name">FUNDI</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="n1oFo8VF3jQ">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/n1oFo8VF3jQ/hqdefault.jpg" alt="Aniceto & Antonio Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3 class="client-name">ANICETO & ANTONIO</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </section>
+
+
+
+    <div class="proof-of-work-section">
+        <p class="heading-small fade-in">PROOF OF WORK</p>
+        <h2 class="heading-large fade-in">Companies we have worked with</h2>
+        <div class="logo-grid">
+            <div class="logo-item binance fade-in">
+                <img src="https://lh3.googleusercontent.com/d/1_CeuKbZ3s8NBUsyh_nC2rRnJNBiMRREe" alt="Binance Logo" loading="lazy">
+                <span>BINANCE</span>
+            </div>
+            <div class="logo-item fade-in">
+                <img src="https://lh3.googleusercontent.com/d/1rgknV5DzQr84Wqk2TBRT5q8100R5its_" alt="OKX Logo" loading="lazy">
+                <span>OKX</span>
+            </div>
+            <div class="logo-item fade-in">
+                <img src="https://lh3.googleusercontent.com/d/1iJbWvrRgFPWUpmlqYUYWBR4FLBJdo35-" alt="Presidency of South Africa Logo" loading="lazy">
+                <span>PRESIDENCY OF SOUTH AFRICA</span>
+            </div>
+            <div class="logo-item fade-in">
+                <img src="https://lh3.googleusercontent.com/d/1ccAtDLGtxVdGyVvFDr3JnVp8JwlXIo6e" alt="TotalEnergies Logo" loading="lazy">
+                <span>TOTAL ENERGIES</span>
+            </div>
+            <div class="logo-item fade-in">
+                <img src="https://lh3.googleusercontent.com/d/1ZDiAbGlxI1BzyM1znif85ey739pW-faK" alt="ABSA Group Logo" loading="lazy">
+                <span>ABSA GROUP</span>
+            </div>
+            <div class="logo-item investec fade-in">
+                <img src="https://lh3.googleusercontent.com/d/16oV4a9EheoD6TiGRbAqtsH13Ur1vWq9g" alt="Investec Logo" loading="lazy">
+                <span>INVESTEC GROUP</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="ramaphosa-quote-section">
+        <div class="text-center mb-8">
+            <p class="heading-small fade-in">INSIGHT FROM THE TOP</p>
+            <h2 class="heading-large text-amber-300 fade-in">A Leader's Vision</h2>
+        </div>
+        <div class="ramaphosa-content flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-8">
+            <div class="ramaphosa-image-container flex-shrink-0 w-[200px] h-[267px] md:order-first slide-in-left">
+                <img src="https://i.imgur.com/pDURdaq.jpg" alt="President Cyril Ramaphosa" loading="lazy" crossorigin="anonymous">
+            </div>
+            <div class="ramaphosa-bio text-left md:w-2/3 slide-in-right">
+                <p class="quote">
+                    "We are also going to focus on the Fourth Industrial Revolution, get into blockchain in the most meaningful way, and the internet of things. He spoke extremely well, what they were saying was moving. It. It was engaging, and it was very touching. Somebody who's watching it is going to be amazed and inspired. It was a message to my generation. And I said, this is most touching, and it was also informative. I think most of us will have learned a lot from blockchain to cryptocurrency to all those things that are the most informative."
+                </p>
+                <p class="author">- President Cyril Ramaphosa of The Republic of South Africa</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="perfect-for-section glass-standard-style blur-standard">
+        <h2 class="heading-small fade-in">THE AI PROFIT BLUEPRINT IS</h2>
+        <h2 class="heading-large fade-in">PERFECT <span class="text-amber-300">FOR...</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 audience-grid">
+            <div class="audience-item fade-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                </svg>
+                <span>BUSINESS OWNERS</span>
+            </div>
+            <div class="audience-item fade-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                </svg>
+                <span>FINANCIAL ANALYSTS</span>
+            </div>
+            <div class="audience-item fade-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                </svg>
+                <span>CREATORS</span>
+            </div>
+            <div class="audience-item fade-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                </svg>
+                <span>TRADERS</span>
+            </div>
+            <div class="audience-item fade-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                </svg>
+                <span>COACHES</span>
+            </div>
+            <div class="audience-item fade-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                </svg>
+                <span>EDUCATORS</span>
+            </div>
+            <div class="audience-item fade-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                </svg>
+                <span>ENTREPRENEURS</span>
+            </div>
+            <div class="audience-item fade-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                </svg>
+                <span>SAASPRENEURS</span>
+            </div>
+            <div class="audience-item fade-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                </svg>
+                <span>CORPORATES</span>
+            </div>
+        </div>
+        <a href="join.html" class="access-button inline-block fade-in">JOIN</a>
+    </div>
+
+    <div class="instructor-section">
+        <p class="heading-small fade-in">Meet the instructor</p>
+        <h2 class="heading-large fade-in">Mpho Dagada</h2>
+        <div class="instructor-content flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-8">
+            <div class="instructor-image-container flex-shrink-0 w-[300px] h-[400px] slide-in-left">
+                <img src="https://i.imgur.com/zA9pUNt.jpg" alt="Mpho Dagada" loading="lazy" crossorigin="anonymous" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div class="instructor-bio text-left md:w-2/3 slide-in-right">
+                <p class="quote">
+                    "We are also going to focus on the Fourth Industrial Revolution, get into blockchain in the most meaningful way, and the internet of things. He spoke extremely well, what they were saying was moving. It. It was engaging, and it was very touching. Somebody who's watching it is going to be amazed and inspired. It was a message to my generation. And I said, this is most touching, and it was also informative. I think most of us will have learned a lot from blockchain to cryptocurrency to all those things that are the most informative."
+                </p>
+                <p class="author">- President Cyril Ramaphosa of The Republic of South Africa</p>
+                <p class="mt-4">
+                    Mpho Dagada's expertise in blockchain and crypto confirms his standing as a transformative leader in the sector. He's a recognized Young Communicator Award Finalist, participant in a Toronto International Exchange Program, and alumnus of the elite TrepCamp at Stanford, aligning with Silicon Valley innovators.
+                </p>
+                <p class="mt-2">
+                    His global influence shines through shines through keynotes on Blockchain and Finance's future, including impactful work with the Gates Foundation to increase banking access for the unbanked. He also educates and empowers weekly via social media - including Facebook, YouTube, Spotify and Apple Podcasts - engaging over 100,0000 followers.
+                </p>
+                <p class="mt-2">
+                    Mpho tours globally discussing the Fourth Industrial Revolution, encouraging societal and personal growth. A true entrepreneur from South Africa, he began micro-lending in high school and has since become a notable figure in business and public speaking worldwide.
+                </p>
+            </div>
+        </div>
+        <a href="join.html" class="access-button inline-block fade-in">JOIN</a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top" title="Back to Top">↑</a>
+
+    <footer class="footer-section fade-in">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4">
+                <a href="join.html" class="gold-button scale-in">JOIN MEMBERSHIP</a>
+                <div class="text-gray-300">
+                    <p>MPHO DAGADA</p>
+                    <p>MRD AI & BLOCKCHAIN CONSULTING</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <p>COPYRIGHT © 2025. ALL RIGHTS RESERVED, MRD FUTURETECH</p>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Testimonial Video Modal -->
+        <div id="testimonial-modal" class="testimonial-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="video-container">
+                    <iframe 
+                    id="testimonial-video" 
+                    src="" 
+                    title="Testimonial Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- Signup Popup Modal -->
+    <div id="signup-modal" class="fixed inset-0 bg-black bg-opacity-75 hidden items-center justify-center z-50">
+        <div class="relative w-full max-w-md mx-4">
+            <button id="close-signup-modal" class="absolute -top-10 right-0 text-white text-2xl hover:text-yellow-400 transition-colors">
+                ✕
+            </button>
+            <div class="glass-standard-style blur-standard p-8">
+                <h3 class="text-2xl font-bold text-white mb-6 text-center">Join MRD AI & Blockchain</h3>
+                <form id="signup-form">
+                    <input type="hidden" name="page_source" value="courses_signup_page">
+                    <div class="mb-4">
+                        <label for="signup-name" class="block text-yellow-400 font-semibold mb-2">Name *</label>
+                        <input type="text" id="signup-name" name="name" required class="w-full p-3 bg-black bg-opacity-50 border border-yellow-400 border-opacity-40 text-white rounded-none focus:border-yellow-400 focus:outline-none">
+                    </div>
+                    <div class="mb-4">
+                        <label for="signup-surname" class="block text-yellow-400 font-semibold mb-2">Surname *</label>
+                        <input type="text" id="signup-surname" name="surname" required class="w-full p-3 bg-black bg-opacity-50 border border-yellow-400 border-opacity-40 text-white rounded-none focus:border-yellow-400 focus:outline-none">
+                    </div>
+                    <div class="mb-6">
+                        <label for="signup-email" class="block text-yellow-400 font-semibold mb-2">Email *</label>
+                        <input type="email" id="signup-email" name="email" required class="w-full p-3 bg-black bg-opacity-50 border border-yellow-400 border-opacity-40 text-white rounded-none focus:border-yellow-400 focus:outline-none">
+                    </div>
+                    <button type="submit" class="w-full access-button">JOIN NOW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Universal Form Handler - Fixes ALL form issues -->
+
+    
+    <script>
+        // Fix cast sender errors
+        if (typeof window.chrome !== 'undefined' && window.chrome.cast) {
+            try {
+                window.chrome.cast.isAvailable = false;
+            } catch (e) {
+                // Ignore cast errors
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            // Back to Top Button functionality
+            const backToTopButton = document.getElementById('back-to-top');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+
+
+            // Accordion functionality for mobile
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                
+                if (header && content) {
+                    header.addEventListener('click', () => {
+                        const isOpen = item.classList.contains('active');
+                        
+                        // Close all other items
+                        accordionItems.forEach(otherItem => {
+                            otherItem.classList.remove('active');
+                        });
+                        
+                        // Toggle current item
+                        if (!isOpen) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            });
+
+            // Line drawing animation
+            const lines = document.querySelectorAll('.decorative-line');
+            
+            const drawLines = () => {
+                lines.forEach((line, index) => {
+                    setTimeout(() => {
+                        line.style.width = '100%';
+                    }, index * 200);
+                });
+            };
+
+            // Start line drawing when page loads
+            setTimeout(drawLines, 1000);
+
+            // Testimonial video modal functionality
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            const modal = document.getElementById('testimonial-modal');
+            const modalVideo = document.getElementById('testimonial-video');
+            const closeModal = document.querySelector('.close-modal');
+
+            if (testimonialCards.length > 0 && modal && modalVideo && closeModal) {
+                testimonialCards.forEach(card => {
+                    card.addEventListener('click', function() {
+                        const videoId = this.getAttribute('data-video-id');
+                        if (videoId) {
+                            modalVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                            modal.classList.add('show');
+                            document.body.style.overflow = 'hidden';
+                        }
+                    });
+                });
+
+                // Close modal functionality
+                closeModal.addEventListener('click', function() {
+                    modal.classList.remove('show');
+                    modalVideo.src = '';
+                    document.body.style.overflow = 'auto';
+                });
+
+                // Close modal when clicking outside
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        modal.classList.remove('show');
+                        modalVideo.src = '';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+
+                // Close modal with Escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && modal.classList.contains('show')) {
+                        modal.classList.remove('show');
+                        modalVideo.src = '';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+
+            // Close modal when clicking outside
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.classList.remove('show');
+                        if (modalVideo) {
+                            modalVideo.src = '';
+                        }
+                    }
+                });
+            }
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal && modal.classList.contains('show')) {
+                    modal.classList.remove('show');
+                    if (modalVideo) {
+                        modalVideo.src = '';
+                    }
+                }
+            });
+
+            // Scroll Animation Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Typewriter Effect
+            function typeWriter(element, text, speed = 50) {
+                let i = 0;
+                element.innerHTML = '';
+                
+                function type() {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    }
+                }
+                
+                type();
+            }
+
+            // Initialize typewriter effects
+            const typewriterElements = document.querySelectorAll('.typewriter');
+            typewriterElements.forEach(element => {
+                const text = element.textContent;
+                element.textContent = '';
+                
+                const typewriterObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            typeWriter(element, text);
+                            typewriterObserver.unobserve(entry.target);
+                        }
+                    });
+                });
+                
+                typewriterObserver.observe(element);
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Signup Modal Functionality
+            function showSignupModal() {
+                const signupModal = document.getElementById('signup-modal');
+                signupModal.classList.add('show');
+            }
+
+            // Close signup modal
+            const closeSignupModal = document.getElementById('close-signup-modal');
+            if (closeSignupModal) {
+                closeSignupModal.addEventListener('click', () => {
+                    document.getElementById('signup-modal').classList.remove('show');
+                });
+            }
+
+            // Close signup modal when clicking outside
+            const signupModal = document.getElementById('signup-modal');
+            if (signupModal) {
+                signupModal.addEventListener('click', (e) => {
+                    if (e.target === signupModal) {
+                        signupModal.classList.remove('show');
+                    }
+                });
+            }
+
+            // Handle signup form submission
+            const signupForm = document.getElementById('signup-form');
+            if (signupForm) {
+                signupForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    // Show loading state
+                    const submitButton = signupForm.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = 'Submitting...';
+                    submitButton.disabled = true;
+                    
+                    try {
+                        // Get form data
+                        const formData = new FormData(signupForm);
+                        
+                        // Form submission handled locally by MRD Brain System
+                        console.log('Form submission handled locally:', formData);
+                        
+                        // Show success message
+                        alert('Thank you! You have been successfully registered.');
+                        signupModal.classList.remove('show');
+                        signupForm.reset();
+                    } catch (error) {
+                        console.error('Error:', error);
+                        alert('Sorry, there was an error. Please try again.');
+                    } finally {
+                        // Reset button
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                    }
+                });
+            }
+
+            // Proposition functionality for infographic section
+            const propositions = document.querySelectorAll('.proposition');
+            propositions.forEach(proposition => {
+                const titleWrapper = proposition.querySelector('.proposition-title-wrapper');
+                const text = proposition.querySelector('.proposition-text');
+                
+                if (titleWrapper && text) {
+                    titleWrapper.addEventListener('click', () => {
+                        const isActive = proposition.classList.contains('active');
+                        
+                        // Close all other propositions
+                        propositions.forEach(otherProp => {
+                            otherProp.classList.remove('active');
+                        });
+                        
+                        // Toggle current proposition
+                        if (!isActive) {
+                            proposition.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Initialize MRD Brain System
+        if (window.MRDBrain) {
+            window.MRDBrain.init();
+        }
+    </script>
+    
+    <!-- Navigation JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Highlight active page in navigation
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+    
+    <!-- Universal Form Fixer - Fixes ALL forms automatically -->
+    <!-- <script src="universal-form-fixer.js"></script> -->
+</body>
+</html>

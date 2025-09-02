@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN - MRD AI & BLOCKCHAIN CONSULTING</title>
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/dlroxg842/image/upload/v1756461627/favic_MRD_ouzdr9.png">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dlroxg842/image/upload/v1756461627/favic_MRD_ouzdr9.png">
+    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dlroxg842/image/upload/v1756461627/favic_MRD_ouzdr9.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat','Inter',sans-serif; margin:0; padding-top:80px; background-image:url('https://lh3.googleusercontent.com/d/1i0Af_h2OpZcxVpfOb9S4hS95ghXlqqTy'); background-size:cover; background-position:center; background-attachment:fixed; min-height:100vh; color:#E5E7EB; position:relative; overflow-x:hidden; user-select:text; }
+
+        .cover-section{position:relative;width:100vw;min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.5) 100%);margin-bottom:4rem;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);margin-left:calc(-50vw + 50%);margin-right:calc(-50vw + 50%);transition:min-height .3s ease;}
+        .cover-content{max-width:800px;padding:2rem;z-index:2;}
+        .cover-title{font-size:4rem;font-weight:800;color:#FFF;margin-bottom:1rem;line-height:1.2;}
+        .cover-title span{color:#FFD700;}
+        .cover-subtitle{font-size:1.5rem;color:#D1D5DB;margin-bottom:2rem;line-height:1.6;}
+        .cover-description{font-size:1.2rem;color:#E5E7EB;line-height:1.8;margin-bottom:3rem;}
+        .glass-standard-style{background-color:rgba(0,0,0,0.8);border:1px solid rgba(255,215,0,0.6);border-radius:0;box-shadow:0 4px 15px rgba(0,0,0,0.2);transition:all .3s ease;}
+        .glass-standard-style:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(255,215,0,0.3),0 0 20px rgba(255,215,0,0.1);border-color:rgba(255,215,0,0.6);}
+        .gold-button{background:linear-gradient(90deg,#FFD700 0%,#FFA500 100%);color:#1F2937;padding:.75rem 2rem;border-radius:9999px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;transition:all .3s ease;box-shadow:0 4px 15px rgba(0,0,0,.3);text-decoration:none;display:inline-block;margin:3rem 0;}
+        .gold-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.4);}
+        .main-content{width:100%;max-width:1200px;padding:2rem;padding-top:8rem;box-sizing:border-box;position:relative;z-index:10;margin:0 auto;}
+        .section{margin-bottom:4rem;padding:3rem 2rem;}
+        .section-title{font-size:2.5rem;font-weight:800;color:#FFF;text-align:center;margin-bottom:1rem;}
+        .section-title span{color:#FFD700;}
+        .section-subtitle{font-size:1.2rem;color:#D1D5DB;text-align:center;margin-bottom:3rem;line-height:1.6;}
+        .mission-section{text-align:center;max-width:900px;margin:0 auto;}
+        .mission-text{font-size:1.2rem;color:#E5E7EB;line-height:1.8;margin-bottom:2rem;}
+        .why-enroll-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem;}
+        .enroll-card{text-align:center;padding:2rem;}
+        .enroll-card h3{font-size:1.8rem;font-weight:700;color:#FFD700;margin-bottom:1rem;}
+        .enroll-card p{color:#D1D5DB;line-height:1.6;margin-bottom:1rem;}
+        .tech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem;margin-top:3rem;}
+        .tech-card{padding:2rem;text-align:center;}
+        .tech-card h3{font-size:1.8rem;font-weight:700;color:#FFD700;margin-bottom:1.5rem;}
+        .tech-card p{color:#E5E7EB;line-height:1.7;font-size:1.1rem;}
+        .video-container{width:100%;max-width:800px;margin:2rem auto;aspect-ratio:16/9;border:1px solid rgba(255,215,0,0.3);}
+        .video-container iframe{width:100%;height:100%;border:none;}
+        .contact-form-section{max-width:600px;margin:0 auto;}
+        .form-group{margin-bottom:1.5rem;}
+        .form-group label{display:block;color:#FFD700;font-weight:600;margin-bottom:.5rem;}
+        .form-group input,.form-group textarea,.form-group select{width:100%;padding:.75rem;border:1px solid rgba(255,215,0,0.4);border-radius:0;background-color:rgba(0,0,0,0.3);color:#E5E7EB;font-size:1rem;transition:all .3s ease;}
+        .form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:rgba(255,215,0,0.8);box-shadow:0 0 10px rgba(255,215,0,0.3);}
+        .form-group textarea{resize:vertical;min-height:120px;}
+        .social-section{text-align:center;margin-top:3rem;}
+        .social-icons{display:flex;justify-content:center;gap:2rem;margin-top:2rem;}
+        .social-icon{width:50px;height:50px;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all .3s ease;overflow:hidden;}
+        .social-icon:hover{transform:translateY(-3px);} .social-icon img{width:100%;height:100%;object-fit:contain;}
+        .footer-section{width:100%;padding:1.5rem 2rem;box-sizing:border-box;text-align:center;background-color:transparent;color:#9CA3AF;font-size:.85rem;margin-top:4rem;}
+        .back-to-top{position:fixed;bottom:2rem;right:2rem;background:linear-gradient(90deg,#FFD700 0%,#FFA500 100%);color:#1F2937;width:3rem;height:3rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,.3);transition:all .3s ease;z-index:1000;opacity:0;visibility:hidden;}
+        .back-to-top.show{opacity:1;visibility:visible;} .back-to-top:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.4);}
+        .fade-in{opacity:0;transform:translateY(30px);transition:all .8s ease;} .fade-in.animate{opacity:1;transform:translateY(0);} .slide-in-left{opacity:0;transform:translateX(-50px);transition:all .8s ease;} .slide-in-left.animate{opacity:1;transform:translateX(0);} .slide-in-right{opacity:0;transform:translateX(50px);transition:all .8s ease;} .slide-in-right.animate{opacity:1;transform:translateX(0);} .scale-in{opacity:0;transform:scale(.8);transition:all .8s ease;} .scale-in.animate{opacity:1;transform:scale(1);} .typewriter{overflow:visible;white-space:normal;border-right:2px solid #FFD700;animation:blink-caret .75s step-end infinite;} @keyframes blink-caret{from,to{border-color:transparent;}50%{border-color:#FFD700;}}
+        .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem;}
+        .testimonial-card{text-align:center;padding:1.5rem;cursor:pointer;transition:all .3s ease;}
+        .testimonial-card:hover{transform:translateY(-5px);}
+        .video-thumbnail-container{position:relative;width:100%;aspect-ratio:16/9;margin-bottom:1rem;border-radius:8px;overflow:hidden;}
+        .video-thumbnail-container img{width:100%;height:100%;object-fit:cover;}
+        .play-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.8);color:#FFD700;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;transition:all .3s ease;}
+        .testimonial-card:hover .play-icon{background:rgba(255,215,0,0.9);color:#000;transform:translate(-50%,-50%) scale(1.1);}
+        .testimonial-card h3{color:#FFD700;font-size:1.5rem;font-weight:700;margin-bottom:.5rem;}
+        .stars{font-size:1.2rem;}
+        
+        /* Navigation Styles */
+        .main-navigation {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10001;
+            transition: all 0.3s ease;
+            pointer-events: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+            pointer-events: auto;
+            z-index: 10002;
+        }
+
+        .nav-link:hover {
+            color: #FFD700;
+            transform: translateY(-2px);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .join-btn {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #000 !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            pointer-events: auto;
+            z-index: 10002;
+        }
+
+        .join-btn:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .join-btn::after {
+            display: none;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background: #FFD700;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 768px) {
+            .main-navigation {
+                top: 15px;
+                right: 15px;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 60px;
+                right: -100%;
+                width: 200px;
+                background: rgba(0, 0, 0, 0.95);
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 1rem;
+                transition: right 0.3s ease;
+                gap: 1rem;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            }
+            
+            .nav-menu.active {
+                right: 15px;
+            }
+            
+            .nav-toggle {
+                display: flex;
+            }
+            
+            .nav-toggle.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .nav-toggle.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            
+            .nav-toggle.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            
+            .nav-link {
+                font-size: 1rem;
+                padding: 0.5rem 0;
+            }
+            
+            .join-btn {
+                margin-top: 0.5rem;
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        /* Logo Header Styles - Matching Homepage */
+        .logo-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .site-logo {
+            height: 60px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .site-logo:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .logo-header {
+                padding: 0.75rem 1rem;
+            }
+            
+            .site-logo {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="main-navigation">
+        <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="learning.html" class="nav-link">Learn</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="join.html" class="nav-link join-btn">JOIN</a>
+        </div>
+        
+        <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+    <!-- Logo Header - Logo on the LEFT side only -->
+    <header class="logo-header">
+        <div class="logo-container">
+            <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756040166/LOGO_MRD_okxdhc.png" alt="MRD Logo" class="site-logo">
+        </div>
+    </header>
+
+    <section class="cover-section">
+        <div class="cover-content">
+            <h1 class="cover-title typewriter">LEARN AUTOMATE ANYTHING WITH AI</h1>
+            <p class="cover-subtitle fade-in">LEARN HOW TO CREATE NO-CODE AUTOMATIONS USING MAKE.COM</p>
+            <p class="cover-description fade-in">Master the art of AI automation and transform your workflow with cutting-edge no-code solutions.</p>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <section class="section">
+            <h2 class="section-title typewriter">WHAT IS AI <span>AUTOMATION?</span></h2>
+            <div class="mission-section">
+                <p class="mission-text fade-in">AI automation refers to the use of artificial intelligence technologies to automate tasks or processes that traditionally require human intervention. By integrating AI with automation tools, systems can analyze data, make decisions, and carry out tasks with minimal or no human input.</p>
+            </div>
+        </section>
+
+        <section class="section glass-standard-style">
+            <h2 class="section-title typewriter">WATCH AN <span>EXAMPLE</span></h2>
+            <h3 class="section-subtitle">GET ACCESS BY JOINING NOW</h3>
+            <div class="text-center mb-8">
+                <a href="join.html" class="gold-button scale-in">JOIN</a>
+            </div>
+            <div class="text-center space-y-4">
+                <p class="text-lg text-gray-300">USE MY REFERRAL LINK TO GET YOU STARTED</p>
+                <a href="https://www.make.com/en/register?pc=mrdfuturetech" class="text-yellow-400 hover:text-yellow-300 underline text-lg font-medium" target="_blank" rel="noopener noreferrer">https://www.make.com/en/register?pc=mrdfuturetech</a>
+            </div>
+            <div class="text-center mt-8">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/9c7Grp2fwt0?modestbranding=1&rel=0" title="AI Automation Example" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title typewriter">SKILLS & <span>TEMPLATES</span></h2>
+            <div class="why-enroll-grid">
+                <div class="enroll-card glass-standard-style slide-in-left">
+                    <h3>SKILLS</h3>
+                    <p>We teach you the skills you need to build no-code automations, no matter your level of experience.</p>
+                </div>
+                <div class="enroll-card glass-standard-style slide-in-right">
+                    <h3>TEMPLATES</h3>
+                    <p>We have ready made templates for to build your automation hassle free.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section glass-standard-style">
+            <h2 class="section-title typewriter">JOIN THE <span>MEMBERSHIP</span></h2>
+            <p class="section-subtitle">FOR ACCESS</p>
+            <div class="text-center mb-8"><a href="join.html" class="gold-button scale-in">JOIN</a></div>
+            <p class="text-xl text-center text-gray-300 mb-8">LET THE AUTOMATION TAKE CARE OF YOUR SOCIAL MEDIA POSTING</p>
+            <h3 class="section-title typewriter">CUSTOMER <span>FEEDBACK</span></h3>
+            <div class="max-w-6xl mx-auto py-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-zinc-900 p-6 rounded-xl shadow-lg flex flex-col items-start border border-yellow-700/50"><div class="flex items-center mb-4"><div class="w-10 h-10 bg-yellow-600 text-black flex items-center justify-center rounded-full text-lg font-semibold mr-3">J</div><div><p class="text-yellow-400 font-medium">@joematiza5796</p><p class="text-gray-400 text-sm">10 days ago</p></div></div><p class="text-gray-200 text-base leading-relaxed">Good evening Mpho, many thanks for the amazing information, I have sign up on your link.</p></div>
+                    <div class="bg-zinc-900 p-6 rounded-xl shadow-lg flex flex-col items-start border border-yellow-700/50"><div class="flex items-center mb-4"><div class="w-10 h-10 bg-yellow-600 text-black flex items-center justify-center rounded-full text-lg font-semibold mr-3">S</div><div><p class="text-yellow-400 font-medium">@ShubuLulunga</p><p class="text-gray-400 text-sm">10 days ago</p></div></div><p class="text-gray-200 text-base leading-relaxed">Great content, appreciated. Live build</p></div>
+                    <div class="bg-zinc-900 p-6 rounded-xl shadow-lg flex flex-col items-start border border-yellow-700/50"><div class="flex items-center mb-4"><img src="https://placehold.co/40x40/000000/FFD700?text=F" alt="User Avatar" class="w-10 h-10 rounded-full mr-3 border border-yellow-600"></div><p class="text-gray-200 text-base leading-relaxed">Amazing work my brother</p></div>
+                    <div class="bg-zinc-900 p-6 rounded-xl shadow-lg flex flex-col items-start border border-yellow-700/50"><div class="flex items-center mb-4"><div class="w-10 h-10 bg-yellow-600 text-black flex items-center justify-center rounded-full text-lg font-semibold mr-3">S</div><div><p class="text-yellow-400 font-medium">@SiyandaNdlovuW7o</p><p class="text-gray-400 text-sm">10 days ago</p></div></div><p class="text-gray-200 text-base leading-relaxed">As a broke university student, this is awesome 🔥🔥🔥. I really need to know more about it. Please build it LIVE!!!</p></div>
+                    <div class="bg-zinc-900 p-6 rounded-xl shadow-lg flex flex-col items-start border border-yellow-700/50"><div class="flex items-center mb-4"><img src="https://placehold.co/40x40/000000/FFD700?text=M" alt="User Avatar" class="w-10 h-10 rounded-full mr-3 border border-yellow-600"></div><p class="text-gray-200 text-base leading-relaxed">Thank you</p></div>
+                    <div class="bg-zinc-900 p-6 rounded-xl shadow-lg flex flex-col items-start border border-yellow-700/50"><div class="flex items-center mb-4"><div class="w-10 h-10 bg-yellow-600 text-black flex items-center justify-center rounded-full text-lg font-semibold mr-3">G</div><div><p class="text-yellow-400 font-medium">@GloraDa-g1</p><p class="text-gray-400 text-sm">9 days ago</p></div></div><p class="text-gray-400 text-base leading-relaxed">Thank you so much for sharing on this platform. cant wait to be able to trade on my own.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title typewriter">LEARNING <span>MODULES</span></h2>
+            <div class="tech-grid">
+                <div class="tech-card glass-standard-style slide-in-left"><h3>LEARN THE BASICS OF AUTOMATION</h3><p>How to effortlessly explore the intuitive automation platform.</p></div>
+                <div class="tech-card glass-standard-style fade-in"><h3>Intro</h3><p>How to effortlessly explore the intuitive automation platform.</p></div>
+                <div class="tech-card glass-standard-style slide-in-right"><h3>Connections</h3><p>How to link your apps together, and configure triggers and actions easily.</p></div>
+                <div class="tech-card glass-standard-style slide-in-left"><h3>Optimizing</h3><p>How to filter and direct the data you need, optimizing your automation.</p></div>
+                <div class="tech-card glass-standard-style fade-in"><h3>Tools</h3><p>How to utilize built-in tools such as the iterator and aggregator.</p></div>
+                <div class="tech-card glass-standard-style slide-in-right"><h3>Functions</h3><p>Discover key functions and learn when to apply them.</p></div>
+            </div>
+        </section>
+
+        <section class="section glass-standard-style">
+            <h2 class="section-title typewriter">EXAMPLE <span>BUILD</span></h2>
+            <p class="section-subtitle">We'll build an automation from start to finish.</p>
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-4">TEMPLATES INCLUDED IN THE COURSE</h3>
+                <h4 class="text-xl font-semibold text-white mb-6">AI TRADING</h4>
+            </div>
+        </section>
+
+        <section class="section glass-standard-style">
+            <h2 class="section-title typewriter">Unlock your Full potential <span>THROUGH AI</span></h2>
+            <div class="contact-form-section">
+                <form id="contact-form">
+                    <input type="hidden" name="page_source" value="learning_page">
+                    <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" required></div>
+                    <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name"></div>
+                    <div class="form-group"><label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" required></div>
+                    <div class="form-group"><label for="platform">Platform</label><select id="platform" name="platform"><option value="">Choose</option><option value="blockchain">Blockchain</option><option value="cryptocurrency">Cryptocurrency</option><option value="ai-automation">AI Automation</option><option value="trading">Trading</option></select></div>
+                    <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us about your goals and interests..."></textarea></div>
+                    <button type="submit" class="gold-button scale-in">NEXT</button>
+                </form>
+                <div id="form-feedback" class="form-feedback hidden"></div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="social-section">
+                <h2 class="section-title typewriter">Connect With <span>Us</span></h2>
+                <p class="section-subtitle fade-in">Follow us on social media for the latest updates and insights</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mphodagada____/?hl=en" class="social-icon" title="Instagram" target="_blank"><img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045003/IG_bzzvvf.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/mphodagda/" class="social-icon" title="Facebook" target="_blank"><img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045004/FB_yaaq7b.png" alt="Facebook"></a>
+                    <a href="https://x.com/mphodagada" class="social-icon" title="Twitter/X" target="_blank"><img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045003/X_izuve1.png" alt="Twitter/X"></a>
+                    <a href="https://www.linkedin.com/company/dagada-mpho/" class="social-icon" title="LinkedIn" target="_blank"><img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045002/linkedin_jyf9gp.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+
+    <a href="#" class="back-to-top" id="back-to-top" title="Back to Top">↑</a>
+
+    <footer class="footer-section">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4">
+                <a href="join.html" class="gold-button scale-in">JOIN MEMBERSHIP</a>
+                <div class="text-gray-300"><p>MPHO DAGADA</p><p>INFO@MPHOD.COM</p></div>
+            </div>
+            <div class="text-right text-gray-400"><p>&copy; 2024 MRD AI & BLOCKCHAIN CONSULTING</p></div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => { if (window.pageYOffset > 300) backToTopButton.classList.add('show'); else backToTopButton.classList.remove('show'); });
+            backToTopButton.addEventListener('click', (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+            const io = new IntersectionObserver((entries)=>{ entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('animate'); } }); }, { threshold:0.1, rootMargin:'0px 0px -50px 0px' });
+            document.querySelectorAll('.fade-in,.slide-in-left,.slide-in-right,.scale-in').forEach(el=>io.observe(el));
+
+            function typeWriter(el, text, speed=50){ let i=0; el.innerHTML=''; (function t(){ if(i<text.length){ el.innerHTML+=text.charAt(i++); setTimeout(t,speed);} })(); }
+            document.querySelectorAll('.typewriter').forEach(el=>{ const text=el.textContent; el.textContent=''; const o=new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ typeWriter(el,text); o.unobserve(e.target);} }); }); o.observe(el); });
+
+            const contactForm = document.getElementById('contact-form');
+            const formFeedback = document.getElementById('form-feedback');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e)=>{
+                    e.preventDefault();
+                    const submitButton = contactForm.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent; submitButton.textContent = 'Submitting...'; submitButton.disabled = true;
+                    const data = Object.fromEntries(new FormData(contactForm).entries());
+                    try {
+                        if (window.MRDBrain && typeof window.MRDBrain.saveFormSubmission === 'function') {
+                            window.MRDBrain.saveFormSubmission({ ...data, form_id: 'contact-form', page_source: 'learning_page' });
+                        } else {
+                            const existing = JSON.parse(localStorage.getItem('mrdFormSubmissions') || '[]');
+                            existing.unshift({ ...data, form_id: 'contact-form', page_source: 'learning_page', timestamp: new Date().toISOString() });
+                            localStorage.setItem('mrdFormSubmissions', JSON.stringify(existing.slice(0,50)));
+                        }
+                        formFeedback.textContent = '✅ Thank you! Your message has been received.';
+                        formFeedback.className = 'form-feedback success';
+                        formFeedback.classList.remove('hidden');
+                        contactForm.reset();
+                        setTimeout(()=>{ formFeedback.classList.add('hidden'); }, 5000);
+                    } catch(err) {
+                        formFeedback.textContent = 'Sorry, there was an error. Please try again.';
+                        formFeedback.className = 'form-feedback error';
+                        formFeedback.classList.remove('hidden');
+                        setTimeout(()=>{ formFeedback.classList.add('hidden'); }, 5000);
+                    } finally { submitButton.textContent = originalText; submitButton.disabled = false; }
+                });
+            }
+
+            const cards = document.querySelectorAll('.testimonial-card');
+            const modal = document.getElementById('testimonial-modal');
+            const modalVideo = document.getElementById('testimonial-video');
+            const closeBtn = document.querySelector('.close-modal');
+            if (cards.length && modal && modalVideo && closeBtn) {
+                cards.forEach(card=>card.addEventListener('click',()=>{ const id=card.getAttribute('data-video-id'); if(id){ modalVideo.src=`https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`; modal.classList.remove('hidden'); modal.classList.add('flex'); document.body.style.overflow='hidden'; }}));
+                function closeModal(){ modal.classList.add('hidden'); modal.classList.remove('flex'); modalVideo.src=''; document.body.style.overflow=''; }
+                closeBtn.addEventListener('click', closeModal);
+                modal.addEventListener('click', (e)=>{ if(e.target===modal) closeModal(); });
+                document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && !modal.classList.contains('hidden')) closeModal(); });
+            }
+        });
+    </script>
+    <script src="mrd-brain-system.js"></script>
+    
+    <!-- Navigation JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
+

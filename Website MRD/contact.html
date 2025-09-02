@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; script-src 'self' https://cdn.tailwindcss.com https://www.googletagmanager.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src https://www.google.com; connect-src 'self' https:; object-src 'none';">
+    <meta http-equiv="Permissions-Policy" content="autoplay=(self), encrypted-media=(self), fullscreen=(self), clipboard-write=(self)">
+    <title>CONTACT US - MRD AI & BLOCKCHAIN CONSULTING</title>
+    <!-- Tailwind CSS Production -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base styles for the entire body */
+        body {
+            font-family: 'Montserrat', 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Restored original background image */
+            background-image: url('https://lh3.googleusercontent.com/d/1i0Af_h2OpZcxVpfOb9S4hS95ghXlqqTy');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            color: #E5E7EB;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Logo Header - Logo on the LEFT side */
+        .logo-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.5);
+            padding: 1rem 2rem;
+        }
+
+        .logo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start; /* Logo on the LEFT only */
+            align-items: center;
+        }
+
+        .site-logo {
+            height: 60px;
+            width: auto;
+            /* Removed filter to show original gold logo */
+        }
+
+        /* Standard Glass effect for all glass sections */
+        .glass-standard-style {
+            background-color: rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            border-radius: 0; /* 90-degree angles */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .blur-standard {
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        .glass-standard-style:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.1);
+            border-color: rgba(255, 215, 0, 0.6);
+        }
+
+        /* Gold Button Styling */
+        .gold-button {
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+            color: #1F2937;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            margin: 3rem 0;
+        }
+
+        .gold-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Social Media Icons */
+        .social-icon-link {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon-link:hover {
+            transform: scale(1.1);
+        }
+
+        .social-icon {
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+        }
+
+        .gold-button:focus-visible {
+            outline: 2px solid #FFD700;
+            outline-offset: 2px;
+        }
+
+        /* Form Feedback Styling */
+        .form-feedback {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .form-feedback.success {
+            background: rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+            border: 2px solid #22c55e;
+        }
+
+        .form-feedback.error {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+            border: 2px solid #ef4444;
+        }
+
+        .form-feedback.hidden {
+            display: none;
+        }
+
+        /* Main Content Container */
+        .main-content {
+            width: 100%;
+            max-width: 1200px;
+            padding: 2rem;
+            padding-top: 8rem;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Cover Section - Same as Courses page */
+        .cover-section {
+            position: relative;
+            width: 100vw;
+            min-height: 100vh; /* Increased to full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+            margin-bottom: 4rem;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            margin-left: calc(-50vw + 50%);
+            margin-right: calc(-50vw + 50%);
+            margin-top: -80px; /* Start from top of page */
+            padding-top: 80px; /* Compensate for header height */
+            transition: min-height 0.3s ease;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .cover-section {
+                min-height: 70vh; /* Increase height to accommodate content movement */
+                padding-top: 40px; /* Reduce top padding for better mobile experience */
+                margin-bottom: 2rem;
+            }
+            
+            .cover-title {
+                font-size: 2.5rem; /* Reduce font size on mobile */
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+            
+            .cover-subtitle {
+                font-size: 1rem; /* Reduce font size on mobile */
+                margin-bottom: 1rem;
+            }
+            
+            .cover-description {
+                font-size: 0.9rem; /* Reduce font size on mobile */
+                margin-bottom: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem; /* Reduce section titles on mobile */
+                margin-bottom: 1.5rem;
+            }
+            
+            .section {
+                padding: 2rem 1rem; /* Reduce padding on mobile */
+                margin-bottom: 2rem;
+            }
+            
+            .main-content {
+                margin-top: 80px; /* Reduce top margin on mobile */
+                padding: 1rem;
+            }
+            
+            /* Background image optimization for tablet */
+            .video-background {
+                background-image: url('https://res.cloudinary.com/dlroxg842/image/upload/v1756370004/tablet_back_a9doi1.jpg') !important;
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+            }
+            
+            /* Footer visibility fix for tablet */
+            .footer-section {
+                padding: 2rem 1rem !important;
+                margin-top: 2rem !important;
+            }
+            
+            /* Back to top button visibility fix */
+            .back-to-top {
+                bottom: 2rem !important;
+                right: 2rem !important;
+                z-index: 1000 !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cover-section {
+                min-height: 60vh; /* Increase height to accommodate content movement */
+                padding-top: 30px; /* Reduce top padding for better mobile experience */
+            }
+            
+            .cover-title {
+                font-size: 2rem; /* Further reduce font size */
+            }
+            
+            .cover-subtitle {
+                font-size: 0.9rem;
+            }
+            
+            .cover-description {
+                font-size: 0.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            /* Background image optimization for phone */
+            .video-background {
+                background-image: url('https://res.cloudinary.com/dlroxg842/image/upload/v1756370004/phone_back_op9qnw.jpg') !important;
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+            }
+            
+            /* Consistent font sizing for all subtext on phone */
+            .cover-subtitle, .cover-description, .section-subtitle {
+                font-size: 0.9rem !important;
+                line-height: 1.5 !important;
+            }
+            
+            /* Footer visibility fix for phone */
+            .footer-section {
+                padding: 1.5rem 0.5rem !important;
+                margin-top: 1.5rem !important;
+                position: relative !important;
+                z-index: 100 !important;
+            }
+            
+            /* Back to top button visibility fix for phone */
+            .back-to-top {
+                bottom: 1rem !important;
+                right: 1rem !important;
+                z-index: 1000 !important;
+                width: 45px !important;
+                height: 45px !important;
+                font-size: 1.2rem !important;
+            }
+        }
+
+        .cover-content {
+            max-width: 800px;
+            padding: 2rem;
+            z-index: 2;
+        }
+
+        .cover-title {
+            font-size: 4rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .cover-title span {
+            color: #FFD700;
+        }
+
+        .cover-subtitle {
+            font-size: 1.5rem;
+            color: #D1D5DB;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .cover-description {
+            font-size: 1.2rem;
+            color: #E5E7EB;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 4rem;
+            padding: 3rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-title span {
+            color: #FFD700;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            text-align: center;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        /* Contact Information */
+        .contact-info {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-item {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .contact-item h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: #E5E7EB;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #FFD700;
+        }
+
+        /* Google Maps Container */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Social Media Section */
+        .social-section {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+
+        .social-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #FFD700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            border-radius: 0; /* Changed to 90-degree angles */
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #E5E7EB;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: rgba(255, 215, 0, 0.8);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer Styles */
+        .footer-section {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: transparent;
+            color: #9CA3AF;
+            font-size: 0.85rem;
+            margin-top: 4rem;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+            color: #1F2937;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Signup Modal Styles */
+        #signup-modal {
+            display: none;
+        }
+
+        #signup-modal.show {
+            display: flex;
+        }
+
+        #close-signup-modal {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 2rem;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        #close-signup-modal:hover {
+            color: #FFD700;
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-left.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-right.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s ease;
+        }
+
+        .scale-in.animate {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .typewriter {
+            overflow: visible; /* Changed from hidden to visible */
+            white-space: normal; /* Changed from nowrap to normal */
+            border-right: 2px solid #FFD700;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #FFD700; }
+        }
+
+        /* Form Feedback Styling */
+        .form-feedback {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .form-feedback.success {
+            background-color: rgba(34, 197, 94, 0.1);
+            color: #22c55e;
+            border: 2px solid #22c55e;
+        }
+        
+        .form-feedback.error {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: #ef4444;
+            border: 2px solid #ef4444;
+        }
+        
+        .form-feedback.hidden {
+            display: none;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .cover-title {
+                font-size: 2.5rem;
+            }
+
+            .cover-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .main-content {
+                padding: 1rem;
+                padding-top: 6rem;
+            }
+
+            .section {
+                padding: 2rem 1rem;
+            }
+
+            .site-logo {
+                height: 50px;
+            }
+
+            .social-icons {
+                gap: 1rem;
+            }
+
+            .map-container {
+                height: 300px;
+            }
+            
+            .cover-image {
+                width: 100% !important;
+                max-width: 300px !important;
+                height: auto !important;
+                margin: 1rem auto !important;
+            }
+            
+            .cover-content {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cover-title {
+                font-size: 2rem;
+            }
+
+            .cover-subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .main-content {
+                padding: 0.5rem;
+                padding-top: 5rem;
+            }
+
+            .section {
+                padding: 1.5rem 0.5rem;
+            }
+
+            .site-logo {
+                height: 40px;
+            }
+
+            .contact-item {
+                padding: 1.5rem;
+            }
+
+            .contact-item h3 {
+                font-size: 1.3rem;
+            }
+
+            .contact-item p,
+            .contact-item a {
+                font-size: 1.1rem;
+            }
+
+            .map-container {
+                height: 250px;
+            }
+            
+            .cover-image {
+                width: 100% !important;
+                max-width: 250px !important;
+                height: auto !important;
+                margin: 0.5rem auto !important;
+            }
+        }
+        
+        /* Navigation Styles */
+        .main-navigation {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link:hover {
+            color: #FFD700;
+            transform: translateY(-2px);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #FFD700;
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .join-btn {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #000 !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .join-btn:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .join-btn::after {
+            display: none;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background: #FFD700;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 768px) {
+            .main-navigation {
+                top: 15px;
+                right: 15px;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 60px;
+                right: -100%;
+                width: 200px;
+                background: rgba(0, 0, 0, 0.95);
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 1rem;
+                transition: right 0.3s ease;
+                gap: 1rem;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            }
+            
+            .nav-menu.active {
+                right: 15px;
+            }
+            
+            .nav-toggle {
+                display: flex;
+            }
+            
+            .nav-toggle.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .nav-toggle.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            
+            .nav-toggle.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            
+            .nav-link {
+                font-size: 1rem;
+                padding: 0.5rem 0;
+            }
+            
+            .join-btn {
+                margin-top: 0.5rem;
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        /* Logo Header Styles */
+        .logo-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.5);
+            padding: 1rem 2rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .site-logo {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .site-logo:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .logo-header {
+                padding: 0.75rem 1rem;
+            }
+            
+            .site-logo {
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="main-navigation">
+        <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="learning.html" class="nav-link">Learn</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="join.html" class="nav-link join-btn">JOIN</a>
+        </div>
+        
+        <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+    <!-- Logo Header - Logo on the LEFT side only -->
+    <header class="logo-header">
+        <div class="logo-container">
+            <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756040166/LOGO_MRD_okxdhc.png" alt="MRD Logo" class="site-logo">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Cover Section - Same as Courses page -->
+        <section class="cover-section">
+            <div class="cover-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <h1 class="cover-title typewriter">CONTACT <span>US</span></h1>
+                        <p class="cover-subtitle fade-in">
+                            Get in touch with our team of AI and Blockchain experts
+                        </p>
+                        <p class="cover-description fade-in">
+                            Ready to transform your future with cutting-edge technology? Let's start a conversation.
+                        </p>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756141947/Layer_1_cieuht.png" 
+                             alt="Contact Us" 
+                             class="fade-in cover-image" 
+                             style="width: 100%; max-width: 300px; height: auto; border-radius: 0; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); margin: 2rem auto; display: block;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="section">
+            <div class="contact-info">
+                <!-- Address -->
+                <div class="contact-item glass-standard-style blur-standard slide-in-left">
+                    <h3>Address</h3>
+                    <p>50 Keyes Avenue, Rosebank, Johannesburg</p>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-item glass-standard-style blur-standard slide-in-right">
+                    <h3>Email Address:</h3>
+                    <a href="mailto:info@mphod.com">info@mphod.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Location Section -->
+        <section class="section">
+            <h2 class="section-title typewriter">Our <span>Location</span></h2>
+            <div class="map-container glass-standard-style blur-standard">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.1234567890123!2d28.0473!3d-26.1445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA4JzQwLjIiUyAyOMKwMDInNTAuMyJF!5e0!3m2!1sen!2sza!4v1234567890123"
+                    allowfullscreen 
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    title="MRD AI & Blockchain Consulting Location - 50 Keyes Avenue, Rosebank, Johannesburg"
+                ></iframe>
+            </div>
+            <div class="location-details text-center mt-4">
+                <p class="text-lg text-yellow-400 font-semibold">50 Keyes Avenue, Rosebank, Johannesburg</p>
+                <p class="text-gray-300">South Africa</p>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="section">
+            <div class="social-section">
+                <h2 class="section-title typewriter">Connect With <span>Us</span></h2>
+                <p class="section-subtitle fade-in">Follow us on social media for the latest updates and insights</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mphodagada____/?hl=en" class="social-icon" title="Instagram" target="_blank">
+                        <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045003/IG_bzzvvf.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/mphodagda/" class="social-icon" title="Facebook" target="_blank">
+                        <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045004/FB_yaaq7b.png" alt="Facebook">
+                    </a>
+                    <a href="https://x.com/mphodagada" class="social-icon" title="Twitter/X" target="_blank">
+                        <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045003/X_izuve1.png" alt="Twitter/X">
+                    </a>
+                    <a href="https://www.linkedin.com/company/dagada-mpho/" class="social-icon" title="LinkedIn" target="_blank">
+                        <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045003/linkedin_jyf9gp.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="section glass-standard-style blur-standard">
+            <h2 class="section-title typewriter">Send Us a <span>Message</span></h2>
+            <div class="contact-form-section">
+                <form id="contact-form">
+                    <input type="hidden" name="page_source" value="contact_page">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="">Choose a subject</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Course Information">Course Information</option>
+                            <option value="Consulting Services">Consulting Services</option>
+                            <option value="Partnership">Partnership</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="gold-button scale-in">Send Message</button>
+                    </div>
+                </form>
+                <div id="form-feedback" class="form-feedback hidden"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top" title="Back to Top">↑</a>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4">
+                <a href="join.html" class="gold-button scale-in">JOIN MEMBERSHIP</a>
+                <div class="text-gray-300">
+                    <p>MPHO DAGADA</p>
+                    <p>MRD AI & BLOCKCHAIN CONSULTING</p>
+                </div>
+            </div>
+            
+            <div class="text-right text-gray-400">
+                <p>COPYRIGHT © 2025. ALL RIGHTS RESERVED, MRD FUTURETECH</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Signup Popup Modal -->
+    <div id="signup-modal" class="fixed inset-0 bg-black bg-opacity-75 hidden items-center justify-center z-50">
+        <button id="close-signup-modal" class="absolute -top-10 right-0 text-white text-2xl hover:text-yellow-400 transition-colors">
+            ✕
+        </button>
+        <div class="glass-standard-style blur-standard p-8">
+            <h3 class="text-2xl font-bold text-white mb-6 text-center">Join MRD AI & Blockchain</h3>
+            <form id="signup-form">
+                <input type="hidden" name="page_source" value="contact_signup_page">
+                
+                <div class="mb-4">
+                    <label for="signup-name" class="block text-yellow-400 font-semibold mb-2">Name *</label>
+                    <input type="text" id="signup-name" name="name" required class="w-full p-3 bg-black bg-opacity-50 border border-yellow-400 border-opacity-40 text-white rounded-none focus:border-yellow-400 focus:outline-none">
+                </div>
+                <div class="mb-4">
+                    <label for="signup-surname" class="block text-yellow-400 font-semibold mb-2">Surname *</label>
+                    <input type="text" id="signup-surname" name="surname" required class="w-full p-3 bg-black bg-opacity-50 border border-yellow-400 border-opacity-40 text-white rounded-none focus:border-yellow-400 focus:outline-none">
+                </div>
+                <div class="mb-6">
+                    <label for="signup-email" class="block text-yellow-400 font-semibold mb-2">Email *</label>
+                    <input type="email" id="signup-email" name="email" required class="w-full p-3 bg-black bg-opacity-50 border border-yellow-400 border-opacity-40 text-white rounded-none focus:border-yellow-400 focus:outline-none">
+                </div>
+                <button type="submit" class="w-full gold-button">JOIN NOW</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- LOCAL FORM HANDLER - No Google Apps Script needed! -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Contact page loading...
+            
+            // Back to Top Button functionality
+            const backToTopButton = document.getElementById('back-to-top');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // CONTACT FORM HANDLER - LOCAL VERSION
+            const contactForm = document.getElementById('contact-form');
+            const formFeedback = document.getElementById('form-feedback');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Show loading state
+                    const submitButton = contactForm.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = 'Submitting...';
+                    submitButton.disabled = true;
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    formData.append('page_source', 'contact_page');
+                    
+                    // Convert form data to object for local storage
+                    const data = Object.fromEntries(formData.entries());
+                    data.timestamp = new Date().toISOString();
+                    data.id = Date.now();
+                    
+                    try {
+                        // LOCAL PROCESSING - No external API calls!
+                        // Save to localStorage and show success message
+                        saveSubmission(data);
+                        showFeedback(contactForm, '✅ Message sent successfully! We will get back to you soon.', 'success');
+                        
+                        // Reset form
+                        contactForm.reset();
+                        
+                    } catch (error) {
+                        console.error('Form submission error:', error);
+                        showFeedback(contactForm, '⚠️ Error occurred. Please try again.', 'error');
+                    }
+                    
+                    // Reset button
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                });
+                
+                console.log('✅ Contact form handler set up successfully');
+            } else {
+                console.error('❌ Contact form not found!');
+            }
+
+            // Scroll Animation Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Typewriter Effect - FIXED TO SHOW COMPLETE TEXT
+            function typeWriter(element, text, speed = 50) {
+                let i = 0;
+                element.innerHTML = '';
+                
+                function type() {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    }
+                }
+                
+                type();
+            }
+
+            // Initialize typewriter effects
+            const typewriterElements = document.querySelectorAll('.typewriter');
+            typewriterElements.forEach(element => {
+                const text = element.textContent;
+                element.textContent = '';
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            typeWriter(element, text);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                
+                observer.observe(element);
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Signup Modal Functionality
+            function showSignupModal() {
+                const signupModal = document.getElementById('signup-modal');
+                signupModal.classList.add('show');
+            }
+
+            // Close signup modal
+            const closeSignupModal = document.getElementById('close-signup-modal');
+            if (closeSignupModal) {
+                closeSignupModal.addEventListener('click', () => {
+                    document.getElementById('signup-modal').classList.remove('show');
+                });
+            }
+
+            // Close signup modal when clicking outside
+            const signupModal = document.getElementById('signup-modal');
+            if (signupModal) {
+                signupModal.addEventListener('click', (e) => {
+                    if (e.target === signupModal) {
+                        signupModal.classList.remove('show');
+                    }
+                });
+            }
+
+            // Handle signup form submission
+            const signupForm = document.getElementById('signup-form');
+            if (signupForm) {
+                signupForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    // Show loading state
+                    const submitButton = signupForm.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = 'Submitting...';
+                    submitButton.disabled = true;
+                    
+                    try {
+                        // Get form data
+                        const formData = new FormData(signupForm);
+                        formData.append('page_source', 'contact_signup_page');
+                        
+                        // LOCAL PROCESSING - Save to localStorage
+                        const data = Object.fromEntries(formData.entries());
+                        data.timestamp = new Date().toISOString();
+                        data.id = Date.now();
+                        
+                        saveSubmission(data);
+                        
+                        // Show success message
+                        alert('Thank you! You have been successfully registered.');
+                        signupModal.classList.remove('show');
+                        signupForm.reset();
+                        
+                    } catch (error) {
+                        console.error('Error:', error);
+                        alert('Sorry, there was an error. Please try again.');
+                    } finally {
+                        // Reset button
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                    }
+                });
+            }
+            
+            console.log('✅ All contact page functionality loaded successfully');
+        });
+
+        // Helper functions for form handling
+        function showFeedback(formElement, message, type) {
+            let feedbackElement = formElement.querySelector('.form-feedback') ||
+                                  formElement.querySelector('#form-feedback') ||
+                                  formElement.nextElementSibling;
+
+            if (!feedbackElement || !feedbackElement.classList.contains('form-feedback')) {
+                feedbackElement = document.createElement('div');
+                feedbackElement.className = 'form-feedback';
+                feedbackElement.style.cssText = `
+                    margin-top: 1rem;
+                    padding: 1rem;
+                    border-radius: 0.5rem;
+                    text-align: center;
+                    font-weight: 600;
+                    background-color: ${type === 'success' ? 'rgba(34, 197, 94, 0.1)' : 'rgba(239, 68, 68, 0.1)'};
+                    color: ${type === 'success' ? '#22c55e' : '#ef4444'};
+                    border: 2px solid ${type === 'success' ? '#22c55e' : '#ef4444'};
+                `;
+                formElement.parentNode.insertBefore(feedbackElement, formElement.nextSibling);
+            }
+
+            feedbackElement.textContent = message;
+            feedbackElement.className = `form-feedback ${type}`;
+            feedbackElement.style.display = 'block';
+
+            setTimeout(() => {
+                feedbackElement.style.display = 'none';
+            }, 8000);
+        }
+
+        function saveSubmission(data) {
+            try {
+                let formSubmissions = JSON.parse(localStorage.getItem('mrdFormSubmissions') || '[]');
+                formSubmissions.unshift(data);
+
+                if (formSubmissions.length > 50) {
+                    formSubmissions = formSubmissions.slice(0, 50);
+                }
+
+                localStorage.setItem('mrdFormSubmissions', JSON.stringify(formSubmissions));
+                console.log('✅ Form data saved locally:', data);
+                
+                // You can also send this data to your own server endpoint if you want
+                // Example: sendToYourServer(data);
+                
+            } catch (error) {
+                console.error('❌ Failed to save form data locally:', error);
+            }
+        }
+
+        // Function to send data to your own server (optional)
+        function sendToYourServer(data) {
+            // Replace with your own server endpoint
+            fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).then(response => {
+                console.log('Data sent to server successfully');
+            }).catch(error => {
+                console.error('Error sending to server:', error);
+            });
+        }
+
+        // Function to scroll to sections for prototyping
+        function scrollToSection(sectionId) {
+            if (sectionId === 'join') {
+                // Scroll to the contact form section
+                const contactForm = document.querySelector('#contact-form').closest('.section');
+                contactForm.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                // For other sections, scroll to them if they exist
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
+    
+    <!-- Navigation JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Highlight active page in navigation
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

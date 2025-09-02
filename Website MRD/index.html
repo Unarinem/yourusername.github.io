@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; script-src 'self' https://cdn.tailwindcss.com https://www.googletagmanager.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src https://www.youtube.com; connect-src 'self' https:; object-src 'none';">
+    <meta http-equiv="Permissions-Policy" content="autoplay=(self 'https://www.youtube.com'), encrypted-media=(self 'https://www.youtube.com'), fullscreen=(self 'https://www.youtube.com'), clipboard-write=(self)">
+    <title>MRD AI & Blockchain Consulting - Master AI Automation & Blockchain Technology</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="MRD AI & Blockchain Consulting - Leading provider of AI automation and blockchain technology solutions. Transform your business with cutting-edge no-code automation tools and blockchain expertise.">
+    <meta name="keywords" content="AI automation, blockchain consulting, no-code solutions, artificial intelligence, automation tools, MRD consulting, AI training, blockchain technology, cryptocurrency, smart contracts">
+    <meta name="author" content="MRD AI & Blockchain Consulting">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MRD AI & Blockchain Consulting - Master AI Automation & Blockchain Technology">
+    <meta property="og:description" content="Transform your business with cutting-edge AI automation and blockchain technology solutions. Expert consulting and training services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="MRD AI & Blockchain Consulting">
+    <meta property="og:image" content="https://res.cloudinary.com/dlroxg842/image/upload/v1756040166/LOGO_MRD_okxdhc.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MRD AI & Blockchain Consulting">
+    <meta name="twitter:description" content="Master AI automation and blockchain technology with expert consulting services.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dlroxg842/image/upload/v1756040166/LOGO_MRD_okxdhc.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/dlroxg842/image/upload/v1756461627/favic_MRD_ouzdr9.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dlroxg842/image/upload/v1756461627/favic_MRD_ouzdr9.png">
+    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dlroxg842/image/upload/v1756461627/favic_MRD_ouzdr9.png">
+    
+    <!-- Tailwind CSS Production -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base styles for the entire body */
+        body {
+            font-family: 'Montserrat', 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Restored original background image */
+            background-image: url('https://lh3.googleusercontent.com/d/1i0Af_h2OpZcxVpfOb9S4hS95ghXlqqTy');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            color: #E5E7EB;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+
+
+        /* Video Background Container - Now with autoplay and new video */
+        .video-background-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        
+        /* Video background NEVER changes size - stays fixed */
+        @media (max-width: 1024px) {
+            .video-background-container {
+                height: 90vh; /* REDUCED for laptop to prevent overlapping */
+                overflow: hidden;
+                margin-bottom: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .video-background-container {
+                height: 100vh; /* STAYS FIXED */
+                overflow: hidden; /* STAYS HIDDEN */
+                margin-bottom: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .video-background-container {
+                height: 120vh; /* INCREASED size on phone for better cover */
+                overflow: hidden; /* STAYS HIDDEN */
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .video-background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        /* Video Background Overlay - Light overlay for better text readability */
+        .video-overlay {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 80px);
+            background: rgba(0, 0, 0, 0.3); /* Light overlay for text readability */
+            z-index: 1;
+        }
+
+        /* Video Content Container */
+        .video-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 3;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .video-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .video-title span {
+            color: #FFD700;
+        }
+
+        .video-subtitle {
+            font-size: 1.3rem;
+            color: #D1D5DB;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-title span {
+            color: #FFD700;
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            margin: 2rem auto;
+            display: block;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem; /* REDUCED from 1.3rem for better fit */
+            color: #D1D5DB;
+            margin-bottom: 1.5rem; /* REDUCED from 2rem for better spacing */
+            line-height: 1.5; /* REDUCED from 1.6 for better fit */
+            max-width: 700px; /* REDUCED from 800px for better fit */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Mission Section Styles */
+        .mission-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .mission-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .mission-title span {
+            color: #FFD700;
+        }
+
+        .mission-text {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        /* Gold Button Styling */
+        .gold-button {
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+            color: #1F2937;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            margin: 3rem 0;
+        }
+
+        .gold-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Main Content Container */
+        .main-content {
+            width: 100%;
+            max-width: 1200px;
+            padding: 2rem;
+            padding-top: 8rem;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Ensure main content never overlaps on any screen size */
+        @media (max-width: 1024px) {
+            .main-content {
+                padding-top: 7rem; /* Reduced for laptop */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                padding-top: 8rem; /* Consistent spacing */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .main-content {
+                padding-top: 8rem; /* Consistent spacing */
+            }
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 4rem;
+            padding: 3rem 2rem;
+        }
+        
+        /* Mobile section adjustments */
+        @media (max-width: 1024px) {
+            .section {
+                padding: 2.5rem 1.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 2rem 1rem;
+                margin-bottom: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .section {
+                padding: 1.5rem 0.5rem; /* INCREASED padding for better cover */
+                margin-bottom: 1.5rem; /* INCREASED margin for better spacing */
+                min-height: 60vh; /* ADDED minimum height for better cover */
+            }
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFF;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-title span {
+            color: #FFD700;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            text-align: center;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        /* Standard Glass effect for all glass sections */
+        .glass-standard-style {
+            background-color: rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            border-radius: 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .blur-standard {
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        .glass-standard-style:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.1);
+            border-color: rgba(255, 215, 0, 0.6);
+        }
+
+        /* Why Enroll Section */
+        .why-enroll-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .enroll-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .enroll-card h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .enroll-card p {
+            color: #D1D5DB;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        /* Technology Explanation Cards */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .tech-card {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .tech-card h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-card p {
+            color: #E5E7EB;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        /* About Us Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-text p {
+            color: #E5E7EB;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Academy Section */
+        .academy-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .academy-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Values Grid */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .value-card p {
+            color: #E5E7EB;
+            line-height: 1.6;
+        }
+
+        /* Programs Section */
+        .programs-content {
+            text-align: center;
+        }
+
+        .programs-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            margin: 2rem auto;
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #FFD700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            border-radius: 0; /* Changed to 90-degree angles */
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #E5E7EB;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: rgba(255, 215, 0, 0.8);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Social Icons Section */
+        .social-section {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+
+        .social-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Companies Section */
+        .companies-section {
+            text-align: center;
+        }
+
+        .companies-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 0;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 215, 0, 0.6);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2);
+        }
+
+        .video-thumbnail-container {
+            position: relative;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video-thumbnail-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover .video-thumbnail-container img {
+            transform: scale(1.05);
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: #FFD700;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover .play-icon {
+            background: rgba(255, 215, 0, 0.9);
+            color: #000;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .testimonial-card h3 {
+            color: #FFD700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stars {
+            font-size: 1.1rem;
+        }
+
+        /* Testimonial Modal Styles */
+        .testimonial-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .testimonial-modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            height: 80%;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid rgba(255, 215, 0, 0.6);
+            border-radius: 0;
+            overflow: hidden;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #FFD700;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 2001;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 5px 10px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            color: #FFF;
+            background-color: rgba(255, 215, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        .testimonial-modal iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Companies Section Styles */
+        .companies-section {
+            text-align: center;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .companies-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Academy Content Styles */
+        .academy-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+        }
+
+        .academy-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            margin: 2rem auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Footer Styles */
+        .footer-section {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: transparent;
+            color: #9CA3AF;
+            font-size: 0.85rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-info {
+            color: #9CA3AF;
+            margin-top: 1rem;
+        }
+
+        .footer-info p {
+            margin: 0.25rem 0;
+            font-size: 0.85rem;
+        }
+
+        .footer-right {
+            text-align: right;
+            color: #9CA3AF;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive Footer */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .footer-left, .footer-right {
+                text-align: center;
+            }
+        }
+
+        /* Form Feedback Styling */
+        .form-feedback {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .form-feedback.success {
+            background-color: rgba(34, 197, 94, 0.1);
+            color: #22c55e;
+            border: 2px solid #22c55e;
+        }
+        
+        .form-feedback.error {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: #ef4444;
+            border: 2px solid #ef4444;
+        }
+        
+        .form-feedback.hidden {
+            display: none;
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-left.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-right.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s ease;
+        }
+
+        .scale-in.animate {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .typewriter {
+            overflow: visible;
+            white-space: normal;
+            border-right: 2px solid #FFD700;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #FFD700; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .main-content {
+                padding: 1rem;
+                padding-top: 6rem;
+            }
+
+            .section {
+                padding: 2rem 1rem;
+            }
+
+            .site-logo {
+                height: 50px;
+            }
+
+            .about-content,
+            .academy-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image,
+            .academy-image {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .main-content {
+                padding: 0.5rem;
+                padding-top: 5rem;
+            }
+
+            .section {
+                padding: 1.5rem 0.5rem;
+            }
+
+            .site-logo {
+                height: 40px;
+            }
+
+            .about-image,
+            .academy-image {
+                max-width: 200px;
+            }
+        }
+        
+
+
+
+        
+        /* Navigation Styles - Exact copy from learning page */
+        .main-navigation {
+            position: fixed !important;
+            top: 20px !important;
+            right: 20px !important;
+            z-index: 10001 !important;
+            transition: all 0.3s ease;
+            pointer-events: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+            pointer-events: auto;
+            z-index: 10002;
+        }
+
+        .nav-link:hover {
+            color: #FFD700;
+            transform: translateY(-2px);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #FFD700;
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .join-btn {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #000 !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            pointer-events: auto;
+            z-index: 10002;
+        }
+
+        .join-btn:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .join-btn::after {
+            display: none;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background: #FFD700;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 768px) {
+            .main-navigation {
+                top: 15px !important;
+                right: 15px !important;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 60px;
+                right: -100%;
+                width: 200px;
+                background: transparent;
+                border-radius: 10px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 1rem;
+                transition: right 0.3s ease;
+                gap: 1rem;
+            }
+            
+            .nav-menu.active {
+                right: 15px;
+            }
+            
+            .nav-toggle {
+                display: flex;
+            }
+            
+            .nav-toggle.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .nav-toggle.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            
+            .nav-toggle.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            
+            .nav-link {
+                font-size: 1rem;
+                padding: 0.5rem 0;
+            }
+            
+            .join-btn {
+                margin-top: 0.5rem;
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        /* Logo Header Styles */
+        .logo-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.5);
+            padding: 1rem 2rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .site-logo {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .site-logo:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .logo-header {
+                padding: 0.75rem 1rem;
+            }
+            
+            .site-logo {
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="main-navigation">
+        <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="learning.html" class="nav-link">Learn</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="join.html" class="nav-link join-btn">JOIN</a>
+        </div>
+        
+        <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+    <!-- Logo Header - Logo on the LEFT side only -->
+    <header class="logo-header">
+        <div class="logo-container">
+            <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756040166/LOGO_MRD_okxdhc.png" alt="MRD Logo" class="site-logo">
+        </div>
+    </header>
+
+    <!-- Video Background Section - Now with autoplay and new video -->
+    <div class="video-background-container">
+        <video 
+            class="video-background" 
+            autoplay 
+            loop 
+            muted 
+            playsinline
+            preload="auto"
+            webkit-playsinline
+            x5-playsinline
+            x5-video-player-type="h5"
+            x5-video-player-fullscreen="true"
+            onloadstart="console.log('Video loading started')"
+            oncanplay="console.log('Video can play')"
+            oncanplaythrough="console.log('Video can play through')"
+            onerror="console.error('Video error:', this.error)"
+        >
+            <source src="./videos/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <h1 class="video-title typewriter">ARTIFICIAL INTELLIGENCE, <span>BLOCKCHAIN CONSULTING</span></h1>
+            <p class="video-subtitle fade-in">
+                MRD AI Blockchain & Consulting is an Online Learning Tool founded by Mpho Dagada who is passionate about empowering others through technology.
+            </p>
+            <a href="learn.html" class="gold-button scale-in">LEARN MORE ABOUT US</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section - IMAGE FIRST, then text -->
+        <section class="hero-section">
+            <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756031004/gold-bitcoin-standing-on-crypto-mining-gpu-compute-2025-03-11-18-01-08-utc_copy_qvutpc.jpg" alt="Gold Bitcoin on Crypto Mining GPU" class="hero-image fade-in" loading="lazy" style="width: 100%; max-width: 400px; height: auto; border-radius: 0; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); margin: 2rem auto; display: block;">
+            <h1 class="hero-title typewriter">ARTIFICIAL INTELLIGENCE, <span>BLOCKCHAIN CONSULTING</span></h1>
+            <p class="hero-subtitle fade-in">
+                MRD AI Blockchain & Consulting is an Online Learning Tool founded by Mpho Dagada who is passionate about empowering others through technology. They offer a variety of online courses, delivered primarily through YouTube, focusing on cutting-edge topics like Bitcoin, automation, and other future technologies. Mpho leverages his expertise to provide accessible and engaging training, helping individuals navigate the complexities and opportunities of the digital age.
+            </p>
+            <a href="join.html" class="gold-button scale-in">JOIN</a>
+        </section>
+
+        <!-- Our Mission Section - IMAGE FIRST, then text -->
+        <section class="section glass-standard-style blur-standard">
+            <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756031246/cryptocurrency-trading-unrecognizable-black-busin-2025-03-18-16-06-53-utc_copy_ja1jgx.jpg" alt="Cryptocurrency Trading Business" class="fade-in" style="width: 100%; max-width: 400px; height: auto; border-radius: 0; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); margin: 2rem auto; display: block;">
+            <div class="mission-section">
+                <h2 class="mission-title typewriter">Our Mission Is to <span>Empower</span></h2>
+                <p class="mission-text fade-in">
+                    Our courses are tailored to the latest skills needed to prepare for the future and drive your career or business forward. There's no doubt about it, crypto is making big waves. You've probably been hearing more and more about it on the news, and heard people talking about it more. But there are those who've been just reading the headlines and discussing it, while others are busy getting to work on becoming part of this revolution and grabbing the huge opportunities.
+                </p>
+            </div>
+        </section>
+
+        <!-- Why Enroll Section - IMAGE FIRST, then text -->
+        <section class="section glass-standard-style blur-standard">
+            <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756031621/view-mysterious-cardboard-box_copy_m9y1pu.jpg" alt="Mysterious Cardboard Box" class="fade-in" style="width: 100%; max-width: 400px; height: auto; border-radius: 0; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); margin: 2rem auto; display: block;">
+            <h2 class="section-title typewriter">Why Enroll in Our <span>Programs?</span></h2>
+            <div class="why-enroll-grid">
+                <div class="enroll-card glass-standard-style blur-standard slide-in-left">
+                    <h3>SELF-PACED PROGRAM</h3>
+                    <p>We have endless amount of content.</p>
+                    <p>You pick and choose which area to start with based on your goals or prior experience.</p>
+                    <p>You can also refer back to our lessons whenever faced with a challenge.</p>
+                </div>
+                <div class="enroll-card glass-standard-style blur-standard slide-in-right">
+                    <h3>We Work With the Very Best</h3>
+                    <p>Our partnerships with leading blockchain platforms and institutions ensure you receive world-class education from industry experts.</p>
+                    <p>Learn from professionals who are actively shaping the future of technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Explanation Section -->
+        <section class="section">
+            <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756462223/hands_whqmrp.png" alt="Human and Robotic Hands" class="fade-in" style="width: 100%; max-width: 400px; height: auto; border-radius: 0; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); margin: 2rem auto; display: block;">
+            <h2 class="section-title typewriter">Understanding <span>Core Technologies</span></h2>
+            <div class="tech-grid">
+                <div class="tech-card glass-standard-style blur-standard slide-in-left">
+                    <h3>What is Blockchain</h3>
+                    <p>
+                        Imagine a digital notebook that's shared across many computers. Every time someone adds a new "page" (transaction), everyone else checks to make sure it's valid. Once approved, the page is locked in, creating a permanent and transparent record. This makes it very secure and difficult to tamper with.
+                    </p>
+                </div>
+                <div class="tech-card glass-standard-style blur-standard fade-in">
+                    <h3>Automation</h3>
+                    <p>
+                        Automation is the use of technology to perform tasks automatically, with little to no human intervention. It's like having a robot helper that can do repetitive or time-consuming tasks for you, so you can focus on other things.
+                    </p>
+                </div>
+                <div class="tech-card glass-standard-style blur-standard slide-in-right">
+                    <h3>What is Bitcoin</h3>
+                    <p>
+                        This is a type of digital money that uses blockchain technology. Think of it like a virtual coin that you can send to others without needing a bank. Because it's decentralized, no single entity controls it.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="section glass-standard-style blur-standard">
+            <h2 class="section-title typewriter">ABOUT <span>US</span></h2>
+            <div class="about-content">
+                <img src="https://i.imgur.com/zA9pUNt.jpg" alt="Mpho Dagada" class="about-image slide-in-left" loading="lazy">
+                <div class="about-text slide-in-right">
+                    <p>
+                        Mpho Dagada is a visionary entrepreneur and blockchain expert who has dedicated his career to empowering others through technology education. With extensive experience in artificial intelligence, cryptocurrency, and automation, Mpho has become a recognized leader in the digital transformation space.
+                    </p>
+                    <p>
+                        His expertise spans across multiple domains including quantitative trading, blockchain development, and AI implementation. Through MRD AI & Blockchain Consulting, he provides world-class education and consulting services to both individuals and corporations seeking to leverage cutting-edge technologies.
+                    </p>
+                    <p>
+                        Mpho's commitment to accessible education has helped thousands of students worldwide understand and implement advanced technologies in their personal and professional lives.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Academy Section -->
+        <section class="section">
+            <h2 class="section-title typewriter">OUR <span>ACADEMY</span></h2>
+            <div class="academy-content">
+                <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756033354/ai_qzylxx.jpg" alt="AI Technology" class="academy-image slide-in-left" loading="lazy" style="width: 100%; max-width: 500px; height: auto; border-radius: 0; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); margin: 2rem auto; display: block;">
+                <div class="slide-in-right">
+                    <p class="section-subtitle">
+                        We deliver online education from world-leading Blockchain platforms and institutions to transform the lives of thousands of students across the globe. Our courses are designed to advance your career and fit in with your busy lifestyle. Each course is expert-led, fully supported and community-based, helping you build career-critical skills. We offer high-quality online education and services that span standard course to top-tier.
+                    </p>
+                    <div class="text-center">
+                        <a href="join.html" class="gold-button scale-in">JOIN</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Core Values Section -->
+        <section class="section glass-standard-style blur-standard">
+            <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756033538/were-all-superstars-here-2025-04-06-09-40-18-utc_mgrvo0.jpg" alt="Superstars Concept" class="fade-in" style="width: 100%; max-width: 400px; height: auto; border-radius: 0; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); margin: 2rem auto; display: block;">
+            <h2 class="section-title typewriter">OUR CORE <span>VALUES</span></h2>
+            <div class="values-grid">
+                <div class="value-card glass-standard-style blur-standard scale-in">
+                    <h3>INTEGRITY</h3>
+                    <p>We maintain the highest ethical standards in all our educational and consulting services.</p>
+                </div>
+                <div class="value-card glass-standard-style blur-standard scale-in">
+                    <h3>ACCOUNTABILITY</h3>
+                    <p>We take responsibility for delivering exceptional results and measurable outcomes.</p>
+                </div>
+                <div class="value-card glass-standard-style blur-standard scale-in">
+                    <h3>KNOWLEDGE</h3>
+                    <p>We continuously expand our expertise to provide cutting-edge insights and solutions.</p>
+                </div>
+                <div class="value-card glass-standard-style blur-standard scale-in">
+                    <h3>COMMITMENT</h3>
+                    <p>We are dedicated to our clients' success and long-term growth in the digital economy.</p>
+                </div>
+                <div class="value-card glass-standard-style blur-standard scale-in">
+                    <h3>PEOPLE</h3>
+                    <p>We prioritize human connection and community building in everything we do.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Self-Paced Program Section -->
+        <section class="section">
+            <h2 class="section-title typewriter">ENROLL IN OUR <span>PROGRAMS</span></h2>
+            <div class="programs-content">
+                <p class="section-subtitle fade-in">
+                    We have endless amount of content. You pick and choose which area to start with based on your goals or prior experience. You can also refer back to our lessons whenever faced with a challenge.
+                </p>
+                <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756033641/0987654_wnon6m.jpg" alt="Program Enrollment" class="programs-image fade-in" loading="lazy" style="width: 100%; max-width: 400px; height: auto; border-radius: 0; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); margin: 2rem auto; display: block;">
+                <a href="join.html" class="gold-button scale-in">JOIN</a>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="section glass-standard-style blur-standard">
+            <h2 class="section-title typewriter">Unlock your Full potential <span>THROUGH AI</span></h2>
+            <div class="contact-form-section">
+                <form id="contact-form">
+                    <input type="hidden" name="page_source" value="home_page">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="platform">Platform</label>
+                        <select id="platform" name="platform">
+                            <option value="">Choose</option>
+                            <option value="blockchain">Blockchain</option>
+                            <option value="cryptocurrency">Cryptocurrency</option>
+                            <option value="ai-automation">AI Automation</option>
+                            <option value="trading">Trading</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your goals and interests..."></textarea>
+                    </div>
+                    <button type="submit" class="gold-button scale-in">NEXT</button>
+                </form>
+                <div id="form-feedback" class="form-feedback hidden"></div>
+
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="section">
+            <div class="social-section">
+                <h2 class="section-title typewriter">Connect With <span>Us</span></h2>
+                <p class="section-subtitle fade-in">Follow us on social media for the latest updates and insights</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mphodagada____/?hl=en" class="social-icon" title="Instagram" target="_blank">
+                        <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045003/IG_bzzvvf.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/mphodagda/" class="social-icon" title="Facebook" target="_blank">
+                        <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045004/FB_yaaq7b.png" alt="Facebook">
+                    </a>
+                    <a href="https://x.com/mphodagada" class="social-icon" title="Twitter/X" target="_blank">
+                        <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045003/X_izuve1.png" alt="Twitter/X">
+                    </a>
+                    <a href="https://www.linkedin.com/company/dagada-mpho/" class="social-icon" title="LinkedIn" target="_blank">
+                        <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756045003/linkedin_jyf9gp.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proof of Work Section -->
+        <section class="section">
+            <p class="section-subtitle" style="color: #D1D5DB; margin-bottom: 0.5rem;">PROOF OF WORK</p>
+            <h2 class="section-title typewriter">Companies we have worked with</h2>
+            <div class="companies-section">
+                <img src="https://res.cloudinary.com/dlroxg842/image/upload/v1756042352/companies_ufzvpj.png" alt="Companies We Work With" class="companies-image fade-in" loading="lazy">
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="section glass-standard-style blur-standard">
+            <p class="section-subtitle" style="color: #D1D5DB; margin-bottom: 0.5rem;">TESTIMONIALS</p>
+            <h2 class="section-title typewriter">What Our <span>Students Say</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="ZvnGTbe1uzM">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/ZvnGTbe1uzM/hqdefault.jpg" alt="Lunga Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3>Lunga</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="yxQ1GZUVB98">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/yxQ1GZUVB98/hqdefault.jpg" alt="Nolwazi Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3>Nolwazi</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="aDitE4IijCg">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/aDitE4IijCg/hqdefault.jpg" alt="Zaahid Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3>Zaahid</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="W8TC2ZO01xQ">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/W8TC2ZO01xQ/hqdefault.jpg" alt="Moses Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3>Moses</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="921ygoNG5BY">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/921ygoNG5BY/hqdefault.jpg" alt="Fundi Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3>Fundi</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="testimonial-card glass-standard-style blur-standard fade-in" data-video-id="n1oFo8VF3jQ">
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/n1oFo8VF3jQ/hqdefault.jpg" alt="Aniceto & Antonio Testimonial Thumbnail" loading="lazy">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <h3>Aniceto & Antonio</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Video Modal -->
+        <div id="testimonial-modal" class="testimonial-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <iframe 
+                    id="testimonial-video"
+                    width="100%" 
+                    height="100%" 
+                    src="" 
+                    title="Testimonial Video"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="join.html" class="gold-button scale-in">JOIN MEMBERSHIP</a>
+                <div class="footer-info">
+                    <p>MPHO DAGADA</p>
+                    <p>MRD AI & BLOCKCHAIN CONSULTING</p>
+                </div>
+            </div>
+            
+            <div class="footer-right">
+                <p>COPYRIGHT © 2025. ALL RIGHTS RESERVED, MRD FUTURETECH</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MRD Brain System -->
+    <script src="mrd-brain-system.js"></script>
+    
+    <!-- MRD Brain Initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize MRD Brain System
+            if (typeof MRDBrainSystem !== 'undefined') {
+                window.MRDBrain = new MRDBrainSystem();
+                console.log('✅ MRD Brain System initialized successfully');
+            } else {
+                console.error('❌ MRD Brain System not loaded');
+            }
+        });
+    </script>
+    
+    <!-- Navigation JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                });
+                
+                // Close mobile menu when clicking on a link
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    });
+                });
+                
+                // Close mobile menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    }
+                });
+                
+                // Add active class to current page
+                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                const currentLink = document.querySelector(`a[href="${currentPage}"]`);
+                if (currentLink) {
+                    currentLink.classList.add('active');
+                }
+            }
+        });
+    </script>
+    
+    <!-- LOCAL FORM HANDLER - No Google Apps Script needed! -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Homepage loading...
+            
+            // CONTACT FORM HANDLER - MRD BRAIN VERSION
+            const contactForm = document.getElementById('contact-form');
+            const formFeedback = document.getElementById('form-feedback');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Show loading state
+                    const submitButton = contactForm.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = 'Submitting...';
+                    submitButton.disabled = true;
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    const data = Object.fromEntries(formData.entries());
+                    
+                    try {
+                        // Use MRD Brain system for form submission
+                        if (window.MRDBrain && typeof window.MRDBrain.saveFormSubmission === 'function') {
+                            await window.MRDBrain.saveFormSubmission({
+                                ...data,
+                                form_id: 'contact-form',
+                                page_source: 'home_page'
+                            });
+                            showFeedback(contactForm, '✅ Form submitted successfully! We will contact you soon.', 'success');
+                        } else {
+                            // Fallback to localStorage if MRD Brain not available
+                            const fallbackData = {
+                                ...data,
+                                form_id: 'contact-form',
+                                page_source: 'home_page',
+                                timestamp: new Date().toISOString()
+                            };
+                            saveSubmission(fallbackData);
+                            showFeedback(contactForm, '✅ Form submitted successfully! We will contact you soon.', 'success');
+                        }
+                        
+                        // Reset form
+                        contactForm.reset();
+                        
+                    } catch (error) {
+                        console.error('Form submission error:', error);
+                        showFeedback(contactForm, 'Sorry, there was an error. Please try again.', 'error');
+                    } finally {
+                        // Reset button
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                    }
+                });
+                
+                console.log('✅ Contact form handler set up successfully with MRD Brain');
+            } else {
+                console.error('❌ Contact form not found!');
+            }
+
+            // Scroll Animation Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Typewriter Effect
+            function typeWriter(element, text, speed = 50) {
+                let i = 0;
+                element.innerHTML = '';
+                
+                function type() {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    }
+                }
+                
+                type();
+            }
+
+            // Initialize typewriter effects
+            const typewriterElements = document.querySelectorAll('.typewriter');
+            typewriterElements.forEach(element => {
+                const text = element.textContent;
+                element.textContent = '';
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            typeWriter(element, text);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                
+                observer.observe(element);
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // TESTIMONIAL VIDEO FUNCTIONALITY
+            console.log('🎬 Setting up testimonial video functionality...');
+            
+            // Testimonial video modal functionality
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            const modal = document.getElementById('testimonial-modal');
+            const modalVideo = document.getElementById('testimonial-video');
+            const closeModal = document.querySelector('.close-modal');
+
+            if (testimonialCards.length > 0 && modal && modalVideo && closeModal) {
+                testimonialCards.forEach(card => {
+                    card.addEventListener('click', function() {
+                        const videoId = this.getAttribute('data-video-id');
+                        if (videoId) {
+                            modalVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                            modal.classList.add('show');
+                            document.body.style.overflow = 'hidden';
+                            
+                            // Log testimonial video play
+                            if (window.MRDBrain) {
+                                window.MRDBrain.trackEvent('testimonial_video_play', {
+                                    videoId: videoId,
+                                    page: 'homepage'
+                                });
+                            }
+                        }
+                    });
+                });
+
+                // Close modal functionality
+                closeModal.addEventListener('click', function() {
+                    modal.classList.remove('show');
+                    modalVideo.src = '';
+                    document.body.style.overflow = 'auto';
+                    
+                    // Log testimonial video close
+                    if (window.MRDBrain) {
+                        window.MRDBrain.trackEvent('testimonial_video_close', {
+                            page: 'homepage'
+                        });
+                    }
+                });
+
+                // Close modal when clicking outside
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        modal.classList.remove('show');
+                        modalVideo.src = '';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+
+                // Close modal with Escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && modal.classList.contains('show')) {
+                        modal.classList.remove('show');
+                        modalVideo.src = '';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+
+                console.log('✅ Testimonial video functionality set up successfully');
+            } else {
+                console.error('❌ Testimonial modal elements not found:', {
+                    cards: testimonialCards.length,
+                    modal: !!modal,
+                    video: !!modalVideo,
+                    close: !!closeModal
+                });
+            }
+            
+            // Video Background - Force Loading and Playing
+            const videoBackground = document.querySelector('.video-background');
+            if (videoBackground) {
+                console.log('🎬 Setting up video background...');
+                
+                // Force video to load immediately
+                videoBackground.load();
+                
+                // Try to play immediately
+                videoBackground.play().catch(e => {
+                    console.log('Initial play failed, will retry:', e);
+                });
+                
+                // Ensure video plays after DOM is ready
+                setTimeout(() => {
+                    if (videoBackground.paused) {
+                        videoBackground.play().catch(e => {
+                            console.log('Delayed play failed:', e);
+                        });
+                    }
+                }, 500);
+                
+                // Add multiple event listeners for better compatibility
+                videoBackground.addEventListener('loadstart', function() {
+                    console.log('✅ Video loading started');
+                });
+                
+                videoBackground.addEventListener('canplay', function() {
+                    console.log('✅ Video can play');
+                    // Try to play again when ready
+                    this.play().catch(e => console.log('Play on canplay failed:', e));
+                });
+                
+                videoBackground.addEventListener('canplaythrough', function() {
+                    console.log('✅ Video can play through');
+                    // Try to play again when fully loaded
+                    this.play().catch(e => console.log('Play on canplaythrough failed:', e));
+                });
+                
+                videoBackground.addEventListener('error', function() {
+                    console.error('❌ Video error:', this.error);
+                });
+
+                // Add click anywhere to play functionality
+                document.addEventListener('click', function() {
+                    if (videoBackground.paused) {
+                        videoBackground.play().catch(e => console.log('Click play failed:', e));
+                    }
+                }, { once: true });
+                
+                // Add touch event for mobile
+                document.addEventListener('touchstart', function() {
+                    if (videoBackground.paused) {
+                        videoBackground.play().catch(e => console.log('Touch play failed:', e));
+                    }
+                }, { once: true });
+                
+                console.log('✅ Video background setup complete');
+            } else {
+                console.error('❌ Video background element not found');
+            }
+            
+            console.log('✅ All homepage functionality loaded successfully');
+        });
+
+        // Helper functions for form handling
+        function showFeedback(formElement, message, type) {
+            let feedbackElement = formElement.querySelector('.form-feedback') ||
+                                  formElement.querySelector('#form-feedback') ||
+                                  formElement.nextElementSibling;
+
+            if (!feedbackElement || !feedbackElement.classList.contains('form-feedback')) {
+                feedbackElement = document.createElement('div');
+                feedbackElement.className = 'form-feedback';
+                feedbackElement.style.cssText = `
+                    margin-top: 1rem;
+                    padding: 1rem;
+                    border-radius: 0.5rem;
+                    text-align: center;
+                    font-weight: 600;
+                    background-color: ${type === 'success' ? 'rgba(34, 197, 94, 0.1)' : 'rgba(239, 68, 68, 0.1)'};
+                    color: ${type === 'success' ? '#22c55e' : '#ef4444'};
+                    border: 2px solid ${type === 'success' ? '#22c55e' : '#ef4444'};
+                `;
+                formElement.parentNode.insertBefore(feedbackElement, formElement.nextSibling);
+            }
+
+            feedbackElement.textContent = message;
+            feedbackElement.className = `form-feedback ${type}`;
+            feedbackElement.style.display = 'block';
+
+            setTimeout(() => {
+                feedbackElement.style.display = 'none';
+            }, 8000);
+        }
+
+        function saveSubmission(data) {
+            try {
+                let formSubmissions = JSON.parse(localStorage.getItem('mrdFormSubmissions') || '[]');
+                formSubmissions.unshift(data);
+
+                if (formSubmissions.length > 50) {
+                    formSubmissions = formSubmissions.slice(0, 50);
+                }
+
+                localStorage.setItem('mrdFormSubmissions', JSON.stringify(formSubmissions));
+                console.log('✅ Form data saved locally:', data);
+                
+            } catch (error) {
+                console.error('❌ Failed to save form data locally:', error);
+            }
+        }
+    </script>
+    
+
+</body>
+</html>

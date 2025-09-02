@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Webhook Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #fff;
+        }
+        .test-section {
+            background: #2a2a2a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #FFD700;
+        }
+        button {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .status {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background: rgba(34, 197, 94, 0.2);
+            border: 1px solid #22c55e;
+            color: #22c55e;
+        }
+        .error {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid #ef4444;
+            color: #ef4444;
+        }
+        .info {
+            background: rgba(59, 130, 246, 0.2);
+            border: 1px solid #3b82f6;
+            color: #3b82f6;
+        }
+        pre {
+            background: #333;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔗 Direct Webhook Test</h1>
+    <p>Testing the Google Apps Script webhook directly to diagnose the issue.</p>
+
+    <div class="test-section">
+        <h2>Current Webhook URLs</h2>
+        <p><strong>Forms:</strong> <code>https://script.google.com/macros/s/AKfycbzBO4RD99n35sLqCDMHgtI58b4lmKbOcwuQhsgyuLHD3bXrWmrfpTc18-vRqClAI1gubw/exec</code></p>
+        <p><strong>Analytics:</strong> <code>https://script.google.com/macros/s/AKfycbyl76rAby3CB5QOjYV86bTrskCOhh1xphKNFbE4mm3Mva67HZnloja6ox4Uf3R-I4xKQg/exec</code></p>
+    </div>
+
+    <div class="test-section">
+        <h2>Test Form Webhook</h2>
+        <button onclick="testFormWebhook()">Test Form Webhook</button>
+        <div id="form-status" class="status info">Ready to test</div>
+        <pre id="form-response"></pre>
+    </div>
+
+    <div class="test-section">
+        <h2>Test Analytics Webhook</h2>
+        <button onclick="testAnalyticsWebhook()">Test Analytics Webhook</button>
+        <div id="analytics-status" class="status info">Ready to test</div>
+        <pre id="analytics-response"></pre>
+    </div>
+
+    <div class="test-section">
+        <h2>Test MRD Brain System</h2>
+        <button onclick="testMRDBrain()">Test MRD Brain</button>
+        <div id="brain-status" class="status info">Ready to test</div>
+        <pre id="brain-response"></pre>
+    </div>
+
+    <!-- MRD Brain System -->
+    <script src="mrd-brain-system.js"></script>
+    
+    <script>
+        // Initialize MRD Brain System
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof MRDBrainSystem !== 'undefined') {
+                window.MRDBrain = new MRDBrainSystem();
+                console.log('✅ MRD Brain System initialized');
+            } else {
+                console.error('❌ MRD Brain System not loaded');
+            }
+        });
+
+        async function testFormWebhook() {
+            const status = document.getElementById('form-status');
+            const response = document.getElementById('form-response');
+            
+            status.innerHTML = '🔄 Testing form webhook...';
+            status.className = 'status info';
+            
+            try {
+                const testData = {
+                    type: "mrd_single_submit",
+                    submission: {
+                        timestamp: new Date().toISOString(),
+                        page_source: "webhook_test",
+                        form_id: "test_form",
+                        session_id: "test_session_" + Date.now(),
+                        name: "Test User",
+                        email: "test@example.com",
+                        phone: "123-456-7890",
+                        message: "Direct webhook test from browser",
+                        course_interest: "AI Trading"
+                    }
+                };
+
+                const result = await fetch('https://script.google.com/macros/s/AKfycbzBO4RD99n35sLqCDMHgtI58b4lmKbOcwuQhsgyuLHD3bXrWmrfpTc18-vRqClAI1gubw/exec', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(testData)
+                });
+
+                const responseText = await result.text();
+                response.textContent = `Status: ${result.status}\nResponse: ${responseText}`;
+                
+                if (result.ok) {
+                    status.innerHTML = '✅ Form webhook test successful!';
+                    status.className = 'status success';
+                } else {
+                    status.innerHTML = '❌ Form webhook test failed';
+                    status.className = 'status error';
+                }
+            } catch (error) {
+                status.innerHTML = '❌ Form webhook test error: ' + error.message;
+                status.className = 'status error';
+                response.textContent = error.toString();
+            }
+        }
+
+        async function testAnalyticsWebhook() {
+            const status = document.getElementById('analytics-status');
+            const response = document.getElementById('analytics-response');
+            
+            status.innerHTML = '🔄 Testing analytics webhook...';
+            status.className = 'status info';
+            
+            try {
+                const testData = {
+                    type: "mrd_analytics",
+                    analytics: {
+                        timestamp: new Date().toISOString(),
+                        event_type: "page_view",
+                        session_id: "test_session_" + Date.now(),
+                        page: "/test-webhook-direct.html",
+                        user_agent: navigator.userAgent,
+                        screen_size: `${screen.width}x${screen.height}`,
+                        referrer: document.referrer || "",
+                        event_data: {
+                            test: "Direct analytics webhook test"
+                        }
+                    }
+                };
+
+                const result = await fetch('https://script.google.com/macros/s/AKfycbyl76rAby3CB5QOjYV86bTrskCOhh1xphKNFbE4mm3Mva67HZnloja6ox4Uf3R-I4xKQg/exec', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(testData)
+                });
+
+                const responseText = await result.text();
+                response.textContent = `Status: ${result.status}\nResponse: ${responseText}`;
+                
+                if (result.ok) {
+                    status.innerHTML = '✅ Analytics webhook test successful!';
+                    status.className = 'status success';
+                } else {
+                    status.innerHTML = '❌ Analytics webhook test failed';
+                    status.className = 'status error';
+                }
+            } catch (error) {
+                status.innerHTML = '❌ Analytics webhook test error: ' + error.message;
+                status.className = 'status error';
+                response.textContent = error.toString();
+            }
+        }
+
+        async function testMRDBrain() {
+            const status = document.getElementById('brain-status');
+            const response = document.getElementById('brain-response');
+            
+            status.innerHTML = '🔄 Testing MRD Brain system...';
+            status.className = 'status info';
+            
+            try {
+                if (window.MRDBrain && typeof window.MRDBrain.saveFormSubmission === 'function') {
+                    await window.MRDBrain.saveFormSubmission({
+                        email: "test@example.com",
+                        name: "Test User",
+                        phone: "123-456-7890",
+                        message: "MRD Brain test submission",
+                        form_id: "test_form",
+                        page_source: "webhook_test"
+                    });
+                    
+                    status.innerHTML = '✅ MRD Brain test successful!';
+                    status.className = 'status success';
+                    response.textContent = 'MRD Brain system is working correctly';
+                } else {
+                    status.innerHTML = '❌ MRD Brain system not available';
+                    status.className = 'status error';
+                    response.textContent = 'MRD Brain system not initialized or saveFormSubmission method not found';
+                }
+            } catch (error) {
+                status.innerHTML = '❌ MRD Brain test error: ' + error.message;
+                status.className = 'status error';
+                response.textContent = error.toString();
+            }
+        }
+    </script>
+</body>
+</html>
